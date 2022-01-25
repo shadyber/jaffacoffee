@@ -16,15 +16,21 @@ class ItemRoastTypeSeeder extends Seeder
     {
         DB::table('item_roast_types')->insert([
 
-            'title' => 'Roasted',
-            'detail' => 'Roasted',
-            'icon' => '/images/icon/roasted.jpg',
+            'title' => 'Light',
+            'detail' => 'Light',
+            'icon' => '/images/icon/Light.jpg',
         ]);
         DB::table('item_roast_types')->insert([
 
-            'title' => 'Fresh',
-            'detail' => 'Fresh Bean',
-            'icon' => '/images/icon/fresh.jpg',
+            'title' => 'Medium',
+            'detail' => 'Medium',
+            'icon' => '/images/icon/Medium.jpg',
+        ]);
+        DB::table('item_roast_types')->insert([
+
+            'title' => 'Dark',
+            'detail' => 'Dark',
+            'icon' => '/images/icon/Dark.jpg',
         ]);
     }
 }

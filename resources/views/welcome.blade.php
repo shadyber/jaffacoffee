@@ -135,7 +135,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_large margin_top_medium margin_bottom_small">make a reservation</a>
+                                                    <a href="#" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_large margin_top_medium margin_bottom_small">place an order</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -8,14 +8,45 @@
                     <nav class="woocommerce-breadcrumb">
                         <a href="/">Home</a>&nbsp;/&nbsp;Shop
                     </nav>
-                    <div class="mode_buttons">
-                        <form action="#" method="post">
+                    <div class="mode_buttons row">
+                        <form action="#" method="post" class="inline">
                             <a href="/item" class="woocommerce_thumbs icon-th" title="Show products as thumbs"></a>
 
                         </form>
+
+
                     </div>
-                    <p class="woocommerce-result-count"> results</p>
+                    <p class="woocommerce-result-count">
+
+                    <form  method="get" class="woocommerce-ordering inline" action="/item">
+
+
+
+                        <select name="itemorigion" class="origion">
+                            <option value="">Coffee Origion</option>
+                            @foreach(\App\Models\ItemOrigion::all() as $origion)
+                                <option value="{{$origion->slug}}" >{{$origion->title}}</option>
+                            @endforeach
+                        </select>
+                        <input type="hidden" name="q" value="#">
+                    </form>
+
+                    <form  method="get" action="/item" class="woocommerce-ordering inline">
+
+
+
+                        <select name="roasttype" class="roastype">
+                            <option value="">Roast Type</option>
+                            @foreach(\App\Models\ItemRoastType::all() as $roastype)
+                                <option value="{{$roastype->slug}}" >{{$roastype->title}}</option>
+                            @endforeach
+                        </select>
+
+                    </form>
                     <form class="woocommerce-ordering" method="get">
+
+
+
                         <select name="orderby" class="orderby">
                             <option value="menu_order" selected="selected">Default sorting</option>
                             <option value="popularity">Sort by popularity</option>
@@ -23,6 +54,18 @@
                             <option value="date">Sort by newness</option>
                             <option value="price">Sort by price: low to high</option>
                             <option value="price-desc">Sort by price: high to low</option>
+                        </select>
+                        <input type="hidden" name="q" value="#">
+                    </form>
+                    <form class="woocommerce-ordering" method="get">
+
+
+
+                        <select name="size" class="size">
+                            <option value="menu_order" selected="selected">Size</option>
+                        @foreach(\App\Models\ItemSize::all() as $size)
+                            <option value="/item">{{$size->title}}</option>
+                           @endforeach
                         </select>
                         <input type="hidden" name="q" value="#">
                     </form>

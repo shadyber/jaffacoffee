@@ -16,20 +16,27 @@ class ItemOrigionSeeder extends Seeder
     {
         DB::table('item_origions')->insert([
 
-            'title' => 'Canada',
-            'detail' => 'Canada',
+            'title' => 'Ethiopia',
+            'detail' => 'Ethiopia',
             'icon' => '/images/icon/origion1.jpg',
         ]);
         DB::table('item_origions')->insert([
 
-            'title' => 'Ethiopia',
-            'detail' => 'Coffee Arabica',
+            'title' => 'Gintamala',
+            'detail' => 'Gintamala',
             'icon' => '/images/icon/origion2.jpg',
         ]);
         DB::table('item_origions')->insert([
 
-            'title' => 'China',
-            'detail' => 'Coffee China',
+            'title' => 'mexico',
+            'detail' => 'mexico',
+            'icon' => '/images/icon/origion3.jpg',
+        ]);
+
+        DB::table('item_origions')->insert([
+
+            'title' => 'columbia',
+            'detail' => 'columbia',
             'icon' => '/images/icon/origion3.jpg',
         ]);
     }

@@ -18,27 +18,16 @@ class ItemSizeSeeder extends Seeder
 
         DB::table('item_sizes')->insert([
 
+            'title' => 'Small',
+            'detail' => '340GG',
+            'icon' => '/images/icon/340G.jpg',
+        ]);
+        DB::table('item_sizes')->insert([
+
             'title' => 'Big',
-            'detail' => 'Big Size 1KG',
-            'icon' => '/images/icon/size1.jpg',
-        ]);
-        DB::table('item_sizes')->insert([
-
-            'title' => 'Medium',
             'detail' => 'Big Size 500G',
-            'icon' => '/images/icon/size2.jpg',
+            'icon' => '/images/icon/500g.jpg',
         ]);
-        DB::table('item_sizes')->insert([
 
-            'title' => 'Small',
-            'detail' => 'Big Size 300G',
-            'icon' => '/images/icon/size3.jpg',
-        ]);
-        DB::table('item_sizes')->insert([
-
-            'title' => 'Small',
-            'detail' => 'Big Size 200G',
-            'icon' => '/images/icon/size4.jpg',
-        ]);
     }
 }

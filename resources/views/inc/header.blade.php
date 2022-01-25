@@ -84,7 +84,9 @@
                         <div class="hide_cart_widget_if_empty">
                             <div class="widget_shopping_cart_content">
                                 <ul class="cart_list product_list_widget">
-                                    <li class="empty">No products in the cart.</li>
+                                    @foreach(\App\Models\Cart::myCart() as $cart)
+                                        <li class="empty">  <a href="/item/{{$cart['slug']}}">{{$cart['name']}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
