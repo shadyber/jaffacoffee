@@ -1,6 +1,7 @@
-
 <!DOCTYPE html>
-<html lang="en-US" class="scheme_original">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+
 
 <head>
     <meta charset="UTF-8" />
@@ -17,7 +18,6 @@
     <link rel='stylesheet' href='/css/fontello/css/fontello.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/core.animation.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='/css/shortcodes.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/js/vendor/woo/plugin.woocommerce.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/skin.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/doc-style.css' type='text/css' media='all' />
@@ -142,10 +142,9 @@
 <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
 <div class="custom_html_section"></div>
 
-<script type='text/javascript'src='/js/vendor/jquery/jquery.js'></script>
+<script type='text/javascript'src='/js/custom/jquery-1.12.4.min.js'></script>
 <script type='text/javascript'src='/js/vendor/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript'src='/js/custom/custom.js'></script>
-<script type='text/javascript'src='/js/vendor/woo/add-to-cart.min.js'></script>
 <script type='text/javascript'src='/js/vendor/woo/woocommerce-add-to-cart.js'></script>
 <script type='text/javascript'src='/js/vendor/modernizr.min.js'></script>
 <script type='text/javascript'src='/js/vendor/ui/core.min.js'></script>
@@ -159,34 +158,33 @@
 <script type='text/javascript'src='/js/custom/core.init.js'></script>
 <script type='text/javascript'src='/js/custom/init.js'></script>
 <script type='text/javascript'src='/js/custom/embed.min.js'></script>
-<script type='text/javascript'src='/js/custom/shortcodes.js'></script>
 <script type='text/javascript'src='/js/custom/core.messages.js'></script>
 <script type='text/javascript'src='/js/custom/forms-api.min.js'></script>
 
-<script>
-    var qnt=1;
-    function getqnt(){
+    <script>
+        var qnt=1;
+        function getqnt(){
         qnt = document.getElementById("qtybutton").value;
     }
-    function getquantity(){
+        function getquantity(){
         return qnt;
     }
-    $( ".add-to-cart" ).click(function() {
+        $( ".add-to-cart" ).click(function() {
         var itemid=$(this).attr("itemid");
         var cbtn=$(this);
         var itemqnt=$(this).attr('qnt')
         $.get("/multipleaddtocart/"+itemid+"/"+qnt, function(data){
-            // Display the returned data in browser
-            cbtn.animate({
-                opacity: 0.25,
-                left: "+=5000",
-                top: "-=5000",
-                height: "toggle"
-            }, 50, function() {
-                // Animation complete.
-            });
-            $('#cartCount').html(data);
-        });
+        // Display the returned data in browser
+        cbtn.animate({
+        opacity: 0.25,
+        left: "+=5000",
+        top: "-=5000",
+        height: "toggle"
+    }, 50, function() {
+        // Animation complete.
+    });
+        $('#cartCount').html(data);
+    });
     });
 </script>
 @yield('js')

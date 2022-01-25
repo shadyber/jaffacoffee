@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
-<html lang="en-US" class="scheme_original">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 
 <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <title>Hot Coffee &#8211; Just another WordPress site</title>
+    <title>Jafa Coffee &#8211; Fresh and Roasted Coffee From The Origion</title>
     <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
     <link rel='stylesheet' href='/js/vendor/revslider/settings.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/js/vendor/woo/woocommerce-layout.css' type='text/css' media='all' />
@@ -38,7 +38,7 @@
     <div class="page_wrap">
         <div class="top_panel_fixed_wrap"></div>
         @include('inc.header')
-     
+
         <section class="slider_wrap slider_fullwide slider_engine_revo slider_alias_main">
             <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
                 <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" data-version="5.1">
@@ -122,7 +122,7 @@
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
-                                            <h2 class="sc_title sc_title_regular sc_align_center margin_top_tiny margin_bottom_small" data-animation="animated fadeInUp normal">Welcome to our coffee house</h2>
+                                            <h2 class="sc_title sc_title_regular sc_align_center margin_top_tiny margin_bottom_small" data-animation="animated fadeInUp normal">Welcome to our Stor</h2>
                                             <div class="sc_section margin_bottom_huge aligncenter w80" data-animation="animated fadeInUp normal">
                                                 <div class="sc_section_inner">
                                                     <div class="wpb_text_column wpb_content_element ">

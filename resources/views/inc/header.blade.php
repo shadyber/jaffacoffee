@@ -37,8 +37,8 @@
                             <span class="contact_icon icon-shopping"></span>
                             <span class="contact_label contact_cart_label">Your cart:</span>
                             <span class="contact_cart_totals">
-		                                <span class="cart_items">0 Items</span> -
-                                        <span class="cart_summa">&#36;0.00</span>
+		                                <span class="cart_items"  id="cartCount">{{\Illuminate\Support\Facades\Session::get('cart')? count(\Illuminate\Support\Facades\Session::get('cart')) : '0'}} Items</span> -
+                                        <span class="cart_summa">&#36;{{\App\Models\Cart::totalCart()}}</span>
                                     </span>
                         </a>
                         <ul class="widget_area sidebar_cart sidebar">

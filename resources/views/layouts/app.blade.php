@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" class="scheme_original">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -141,11 +140,9 @@
 <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
 <div class="custom_html_section"></div>
 
-<script type='text/javascript' src='/js/vendor/jquery/jquery.js'></script>
+<script type='text/javascript'src='/js/custom/jquery-1.12.4.min.js'></script>
 <script type='text/javascript' src='/js/vendor/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='/js/custom/custom.js'></script>
-<script type='text/javascript' src='/js/vendor/woo/add-to-cart.min.js'></script>
-<script type='text/javascript' src='/js/vendor/woo/woocommerce-add-to-cart.js'></script>
 <script type='text/javascript' src='/js/vendor/modernizr.min.js'></script>
 <script type='text/javascript' src='/js/vendor/ui/core.min.js'></script>
 <script type='text/javascript' src='/js/vendor/woo/jquery.blockUI.min.js'></script>

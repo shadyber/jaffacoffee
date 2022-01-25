@@ -1,269 +1,184 @@
-@extends('layouts.app')
-@section('title','Shop')
-@section('sub_title','List')
+@extends('layouts.shop')
 @section('content')
 
     <div class="page_content_wrap page_paddings_yes">
         <div class="content_wrap">
-            <div class="content">
-                <div class="list_products shop_mode_thumbs">
-                    <nav class="woocommerce-breadcrumb">
-                        <a href="index.html">Home</a>&nbsp;/&nbsp;Shop
-                    </nav>
-                    <div class="mode_buttons">
-                        <form action="#" method="post">
-                            <a href="shop.html" class="woocommerce_thumbs icon-th" title="Show products as thumbs"></a>
-                            <a href="shop-list.html" class="woocommerce_list icon-th-list" title="Show products as list"></a>
-                        </form>
-                    </div>
-                    <p class="woocommerce-result-count"> Showing 1–4 of 8 results</p>
-                    <form class="woocommerce-ordering" method="get">
-                        <select name="orderby" class="orderby">
-                            <option value="menu_order" selected="selected">Default sorting</option>
-                            <option value="popularity">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="date">Sort by newness</option>
-                            <option value="price">Sort by price: low to high</option>
-                            <option value="price-desc">Sort by price: high to low</option>
-                        </select>
-                        <input type="hidden" name="q" value="#">
-                    </form>
-                    <ul class="products">
-                        <li class="product has-post-thumbnail column-1_2 first sale">
-                            <a href="single-product.html" class="woocommerce-LoopProduct-link"></a>
-                            <div class="post_item_wrap">
-                                <div class="post_featured">
-                                    <div class="post_thumb">
-                                        <a class="hover_icon hover_icon_link" href="single-product.html">
-                                            <span class="onsale">Sale!</span>
-                                            <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="americano" title="americano">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="post_content">
-                                    <h3>
-                                        <a href="single-product.html">Americano</a>
-                                    </h3>
-                                    <span class="price">
-                                            <del>
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">$</span>10.00</span>
-                                            </del>
-                                            <ins>
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">$</span>7.00
-                                                </span>
-                                            </ins>
-                                        </span>
-                                    <a href="#"></a>
-                                    <a rel="nofollow" href="#" data-quantity="1" data-product_id="140" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product has-post-thumbnail column-1_2 last">
-                            <a href="single-product.html" class="woocommerce-LoopProduct-link"></a>
-                            <div class="post_item_wrap">
-                                <div class="post_featured">
-                                    <div class="post_thumb">
-                                        <a class="hover_icon hover_icon_link" href="single-product.html">
-                                            <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="cappuccino" title="cappuccino">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="post_content">
-                                    <h3>
-                                        <a href="single-product.html">Cappuccino</a>
-                                    </h3>
-                                    <span class="price">
-                                            <span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">$</span>4.00</span>
-                                            </span>
-                                    <a href="#"></a>
-                                    <a rel="nofollow" href="#" data-quantity="1" data-product_id="139" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product has-post-thumbnail column-1_2 first sale">
-                            <a href="single-product.html" class="woocommerce-LoopProduct-link"></a>
-                            <div class="post_item_wrap">
-                                <div class="post_featured">
-                                    <div class="post_thumb">
-                                        <a class="hover_icon hover_icon_link" href="single-product.html">
+            <div class="row">
 
-                                            <span class="onsale">Sale!</span>
-                                            <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="waffles" title="waffles">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="post_content">
-                                    <h3>
-                                        <a href="single-product.html">Lemon Waffles</a>
-                                    </h3>
-                                    <span class="price">
-                                            <del>
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">$</span>27.00
-                                                </span>
-                                            </del>
-                                            <ins>
-                                                <span class="woocommerce-Price-amount amount">
-                                                    <span class="woocommerce-Price-currencySymbol">$</span>18.00
-                                                </span>
-                                            </ins>
-                                        </span>
-                                    <a href="#"></a>
-                                    <a rel="nofollow" href="#" data-quantity="1" data-product_id="138" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+
+
+                <div class="row">
+                    <article class="post_item post_item_single post_item_product">
+                        <nav class="woocommerce-breadcrumb">
+                            <a href="/">Home</a>&nbsp;/&nbsp;
+                            <a href="#">Drinks</a>&nbsp;/&nbsp;{{$item->name}}
+                        </nav>
+                        <div id="product-140" class="post-140 product has-post-thumbnail first sale">
+                            <span class="onsale">Sale!</span>
+                            <div class="images">
+                                <a href="/images/2000x2000.png" class="woocommerce-main-image zoom hover_icon hover_icon_view" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
+                                    <img src="/images/2000x2000.png" class="attachment-shop_single size-shop_single" alt="americano" title="americano">
+                                </a>
+                                <div class="thumbnails columns-4">
+                                    <a href="/images/2000x2000.png" class="zoom first" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
+                                        <img src="/images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="croissant" title="croissant"></a>
+                                    <a href="/images/2000x2000.png" class="zoom" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
+                                        <img src="/images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="panini" title="panini">
+                                    </a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="product has-post-thumbnail column-1_2 last">
-                            <a href="single-product.html" class="woocommerce-LoopProduct-link"></a>
-                            <div class="post_item_wrap">
-                                <div class="post_featured">
-                                    <div class="post_thumb">
-                                        <a class="hover_icon hover_icon_link" href="single-product.html">
-                                            <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="panini" title="panini">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="post_content">
-                                    <h3>
-                                        <a href="single-product.html">Mac&amp;Cheese Panini</a>
-                                    </h3>
-                                    <span class="price">
+                            <div class="summary entry-summary">
+                                <h1 class="product_title entry-title">Americano</h1>
+                                <div>
+                                    <p class="price">
+                                        <del>
                                             <span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">$</span>14.00
+                                                <span class="woocommerce-Price-currencySymbol">$</span>10.00
                                             </span>
-                                        </span>
-                                    <a href="#"></a>
-                                    <a rel="nofollow" href="#" data-quantity="1" data-product_id="137" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                        </del>
+                                        <ins>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">$</span>7.00
+                                            </span>
+                                        </ins>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>Maecenas et nunc augue. Duis convallis nulla augue, vel pretium quam mattis nec. Pellentesque dapibus faucibus lacus quis feugiat.</p>
+                                </div>
+                                <form class="cart" method="post" enctype="multipart/form-data">
+                                    <div class="quantity">
+                                        <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                                        <span class="q_inc"></span><span class="q_dec"></span></div>
+                                    <input type="hidden" name="add-to-cart" value="140">
+                                    <button type="submit" class="single_add_to_cart_button button alt">Add to cart</button>
+                                </form>
+                                <div class="product_meta">
+                                    <span class="posted_in">Category:
+                                        <a href="#" rel="tag">Drinks</a>
+                                    </span>
+                                    <span class="product_id">Product ID:
+                                        <span>140</span>
+                                    </span>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <nav id="pagination" class="pagination_wrap pagination_pages">
-                        <span class="pager_current active ">1</span>
-                        <a href="#" class="">2</a>
-                        <a href="#" class="pager_next"></a>
-                        <a href="#" class="pager_last"></a>
-                    </nav>
-                </div>
-            </div>
-            <div class="sidebar widget_area scheme_original" role="complementary">
-                <div class="sidebar_inner widget_area_inner">
-                    <aside class="widget woocommerce widget_product_categories">
-                        <h5 class="widget_title">Categories</h5>
-                        <ul class="product-categories">
-                            <li class="cat-item">
-                                <a href="#">Desserts</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Drinks</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Events</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Recipes</a>
-                            </li>
-                            <li class="cat-item">
-                                <a href="#">Restaurants</a>
-                            </li>
-                        </ul>
-                    </aside>
-                    <aside class="widget woocommerce widget_top_rated_products">
-                        <h5 class="widget_title">Top Rated Products</h5>
-                        <ul class="product_list_widget">
-                            <li>
-                                <a href="single-product.html" title="Smooth Iced Coffee">
-                                    <img src="images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
-                                    <span class="product-title">Smooth Iced Coffee</span>
-                                </a>
-                                <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>15.00</span>
-                            </li>
-                            <li>
-                                <a href="single-product.html" title="Mac&amp;Cheese Panini">
-                                    <img src="images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
-                                    <span class="product-title">Mac&amp;Cheese Panini</span>
-                                </a>
-                                <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>14.00</span>
-                            </li>
-                            <li>
-                                <a href="single-product.html" title="Americano">
-                                    <img src="images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="">
-                                    <span class="product-title">Americano</span>
-                                </a>
-                                <del>
-                                        <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">$</span>10.00</span>
-                                </del>
-                                <ins>
-                                        <span class="woocommerce-Price-amount amount">
-                                    <span class="woocommerce-Price-currencySymbol">$</span>7.00</span>
-                                </ins>
-                            </li>
-                        </ul>
-                    </aside>
-                    <aside class="widget widget_socials">
-                        <h5 class="widget_title">follow us</h5>
-                        <div class="widget_inner">
-                            <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_small">
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_twitter">
-                                        <span class="icon-twitter"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_facebook">
-                                        <span class="icon-facebook"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_gplus">
-                                        <span class="icon-gplus"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_linkedin">
-                                        <span class="icon-linkedin"></span>
-                                    </a>
-                                </div>
-                                <div class="sc_socials_item">
-                                    <a href="#" target="_blank" class="social_icons social_skype">
-                                        <span class="icon-skype"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
-                    <aside class="widget widget_text">
-                        <h5 class="widget_title">newsletter</h5>
-                        <div class="textwidget">
-                            <form class="mc4wp-form mc4wp-form-422" method="post" data-id="422" data-name="">
-                                <div class="mc4wp-form-fields">
+                            <div class="woocommerce-tabs wc-tabs-wrapper">
+                                <ul class="tabs wc-tabs">
+                                    <li class="description_tab active">
+                                        <a href="#tab-description">Description</a>
+                                    </li>
+                                    <li class="reviews_tab">
+                                        <a href="#tab-reviews">Reviews (0)</a>
+                                    </li>
+                                </ul>
+                                <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" style="display: block;">
+                                    <h2>Product Description</h2>
                                     <p>
-                                        <label>Enter your email below and be the first to know news from us!</label>
-                                        <input type="email" name="EMAIL" placeholder="E-mail address" required="">
+                                        Suspendisse in nulla lacinia, auctor ligula quis, ultrices eros. Maecenas iaculis sit amet tortor ut cursus. Etiam tempor libero a tristique hendrerit.
+                                        Proin rutrum dolor at nibh volutpat dictum. Fusce sem justo, congue fermentum gravida in, rhoncus in ex.
                                     </p>
                                     <p>
-                                        <input type="submit" value="Subscribe">
+                                        Maecenas in tempus lorem. Integer pretium tortor quis arcu convallis, non efficitur odio porta. Donec auctor molestie rutrum.
+                                        In dolor est, aliquet ut turpis varius, luctus sollicitudin arcu. Nam nec lacinia magna. Fusce placerat est blandit dui mollis convallis eget eu quam.
+                                        Sed quis ligula vitae dui condimentum ultrices nec in sapien.
                                     </p>
-                                    <div class="hideblock">
-                                        <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off">
+                                </div>
+                                <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" style="display: none;">
+                                    <div id="reviews" class="woocommerce-Reviews">
+                                        <div id="comments">
+                                            <h2 class="woocommerce-Reviews-title">Reviews</h2>
+                                            <p class="woocommerce-noreviews">There are no reviews yet.</p>
+                                        </div>
+                                        <div id="review_form_wrapper">
+                                            <div id="review_form">
+                                                <div id="respond" class="comment-respond">
+                                                    <h3 id="reply-title" class="comment-reply-title">Be the first to review “Americano”
+                                                        <small>
+                                                            <a rel="nofollow" id="cancel-comment-reply-link" href="#respond">Cancel reply</a>
+                                                        </small>
+                                                    </h3>
+                                                    <form action="#" method="post" id="commentform" class="comment-form">
+                                                        <p class="comment-notes">
+                                                            <span id="email-notes">Your email address will not be published.</span> Required fields are marked
+                                                            <span class="required">*</span>
+                                                        </p>
+                                                        <p class="comment-form-rating">
+                                                            <label for="rating">Your Rating</label>
+                                                        <p class="stars"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p><select name="rating" id="rating" aria-required="true" required="" style="display: none;">
+                                                            <option value="">Rate…</option>
+                                                            <option value="5">Perfect</option>
+                                                            <option value="4">Good</option>
+                                                            <option value="3">Average</option>
+                                                            <option value="2">Not that bad</option>
+                                                            <option value="1">Very Poor</option>
+                                                        </select>
+                                                        </p>
+                                                        <p class="comment-form-comment">
+                                                            <label for="comment">Your Review
+                                                                <span class="required">*</span>
+                                                            </label>
+                                                            <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required=""></textarea>
+                                                        </p>
+                                                        <p class="comment-form-author">
+                                                            <label for="author">Name
+                                                                <span class="required">*</span>
+                                                            </label>
+                                                            <input id="author" name="author" type="text" value="" size="30" aria-required="true" required="">
+                                                        </p>
+                                                        <p class="comment-form-email">
+                                                            <label for="email">Email
+                                                                <span class="required">*</span>
+                                                            </label>
+                                                            <input id="email" name="email" type="email" value="" size="30" aria-required="true" required="">
+                                                        </p>
+                                                        <p class="form-submit">
+                                                            <input name="submit" type="submit" id="submit" class="submit" value="Submit">
+                                                            <input type="hidden" name="comment_post_ID" value="140" id="comment_post_ID">
+                                                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                                        </p>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
                                     </div>
-                                    <input type="hidden" name="_mc4wp_timestamp" value="1497855810">
-                                    <input type="hidden" name="_mc4wp_form_id" value="422">
-                                    <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
                                 </div>
-                                <div class="mc4wp-response"></div>
-                            </form>
+                            </div>
+                            <div class="related products">
+                                <h2>Related Products</h2>
+                                <ul class="products">
+                                    <li class="product has-post-thumbnail column-1_3 first">
+                                        <a href="single-product.html" class="woocommerce-LoopProduct-link"> </a>
+                                        <div class="post_item_wrap">
+                                            <div class="post_featured">
+                                                <div class="post_thumb">
+                                                    <a class="hover_icon hover_icon_link" href="single-product.html">
+                                                        <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="cappuccino" title="cappuccino">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="post_content">
+                                                <h3>
+                                                    <a href="single-product.html">Cappuccino</a>
+                                                </h3>
+                                                <span class="price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span class="woocommerce-Price-currencySymbol">$</span>4.00
+                                                    </span>
+                                                </span>
+                                                <a href="#"></a>
+                                                <a rel="nofollow" href="#" data-quantity="1" data-product_id="139" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </aside>
+                    </article>
                 </div>
+
+
             </div>
         </div>
     </div>
-
 @endsection

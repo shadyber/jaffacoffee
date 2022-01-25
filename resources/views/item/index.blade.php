@@ -55,7 +55,7 @@
                                             </ins>
                                         </span>
                                     <a href="#"></a>
-                                    <button data-product_id="140" itemid="{{$item->id}}" qnt="1"  class="button product_type_simple add_to_cart_button add-to-cart">Add to cart</button>
+                                    <button    qnt="1" itemid="{{$item->id}}"  class="button product_type_simple add_to_cart_button add-to-cart">Add to cart</button>
                                 </div>
                             </div>
                         </li>
