@@ -1,4 +1,5 @@
 @extends('layouts.shop')
+@section('title',$item->name)
 @section('content')
 
     <div class="page_content_wrap page_paddings_yes">
