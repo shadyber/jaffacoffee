@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,15 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/item',\App\Http\Controllers\ItemController::class);
 
+
+
+Route::get('/addtocart/{id}',[CartController::class,'addToCart'])->name('addtocart');
+Route::get('/multipleaddtocart/{id}/{qnt}',[CartController::class,'addMultipleToCart'])->name('addmultipletocart');
+Route::get('/removecart/{id}/',[CartController::class,'removeCart'])->name('removeCart');
+Route::get('/destroyCart',[CartController::class,'destroyCart'])->name('destroyCartm');
+
+
+Route::get('/mycart',[CartController::class,'myCart'])->name('mycart');
 
 
 Route::get('/about',function (){

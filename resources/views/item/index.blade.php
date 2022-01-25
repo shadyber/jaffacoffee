@@ -1,19 +1,17 @@
-@extends('layouts.app')
-@section('title','Shop')
-@section('sub_title','All Items')
+@extends('layouts.shop')
 @section('content')
 
-    <div class="page_content_wrap page_paddings_yes">
+        <div class="page_content_wrap page_paddings_yes">
         <div class="content_wrap">
             <div class="content">
                 <div class="list_products shop_mode_thumbs">
                     <nav class="woocommerce-breadcrumb">
-                        <a href="index.html">Home</a>&nbsp;/&nbsp;Shop
+                        <a href="/">Home</a>&nbsp;/&nbsp;Shop
                     </nav>
                     <div class="mode_buttons">
                         <form action="#" method="post">
-                            <a href="shop.html" class="woocommerce_thumbs icon-th" title="Show products as thumbs"></a>
-                            <a href="shop-list.html" class="woocommerce_list icon-th-list" title="Show products as list"></a>
+                            <a href="/item" class="woocommerce_thumbs icon-th" title="Show products as thumbs"></a>
+
                         </form>
                     </div>
                     <p class="woocommerce-result-count"> Showing 1–4 of 8 results</p>

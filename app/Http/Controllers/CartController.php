@@ -2,84 +2,151 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cart;
-use Illuminate\Http\Request;
+use App\Models\Item;
 
 class CartController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function addToCart($id)
     {
-        //
+        $product = Item::find($id);
+
+        if(!$product) {
+
+            abort(404);
+
+        }
+
+        $cart = session()->get('cart');
+
+        // if cart is empty then this the first product
+        if(!$cart) {
+
+            $cart = [
+                $id => [
+                    "id" =>$product->id,
+                    "slug"=>$product->slug,
+                    "name" => $product->name,
+                    "quantity" => 1,
+
+                    "price" => $product->price,
+                    "photo" => $product->photo,
+                    "thumb" => $product->thumb
+                ]
+            ];
+
+            session()->put('cart', $cart);
+            return count(session()->get('cart'));
+            //return redirect()->back()->with('success', 'Product added to cart successfully!');
+        }
+
+        // if cart not empty then check if this product exist then increment quantity
+        if(isset($cart[$id])) {
+
+            $cart[$id]['quantity']++;
+
+            session()->put('cart', $cart);
+
+            // return redirect()->back()->with('success', 'Product added to cart successfully!');
+            return count(session()->get('cart'));
+
+        }
+
+        // if item not exist in cart then add to cart with quantity = 1
+        $cart[$id] = [
+            "name" => $product->name,
+            "slug" => $product->slug,
+            "id" => $product->id,
+            "quantity" => 1,
+            "price" => $product->price,
+            "photo" => $product->photo,
+            "thumb" => $product->thumb
+        ];
+
+        session()->put('cart', $cart);
+        return count(session()->get('cart'));
+        //    return redirect()->back()->with('success', 'Product added to cart successfully!');
+    }
+    public function addMultipleToCart($id,$qnt)
+    {
+        $product = Item::find($id);
+
+
+        if(!$product) {
+
+            abort(404);
+
+        }
+
+        $cart = session()->get('cart');
+
+        // if cart is empty then this the first product
+        if(!$cart) {
+
+            $cart = [
+                $id => [
+                    "id" =>$product->id,
+                    "slug"=>$product->slug,
+                    "name" => $product->name,
+                    "quantity" => $qnt,
+                    "price" => $product->price,
+                    "photo" => $product->photo,
+                    "thumb" => $product->thumb
+                ]
+            ];
+
+            session()->put('cart', $cart);
+            return count(session()->get('cart'));
+            //return redirect()->back()->with('success', 'Product added to cart successfully!');
+        }
+
+        // if cart not empty then check if this product exist then increment quantity
+        if(isset($cart[$id])) {
+
+            $cart[$id]['quantity']+=$qnt;
+
+            session()->put('cart', $cart);
+
+            // return redirect()->back()->with('success', 'Product added to cart successfully!');
+            return count(session()->get('cart'));
+
+        }
+
+        // if item not exist in cart then add to cart with quantity = 1
+        $cart[$id] = [
+            "name" => $product->name,
+            "slug" => $product->slug,
+            "id" => $product->id,
+            "quantity" => $qnt,
+            "price" => $product->price,
+            "photo" => $product->photo,
+            "thumb" => $product->thumb
+        ];
+
+        session()->put('cart', $cart);
+        return count(session()->get('cart'));
+        //    return redirect()->back()->with('success', 'Product added to cart successfully!');
+    }
+    public function removeCart($id)
+    {
+
+        $cart=session()->get('cart');
+        if(!$cart){
+            return redirect()->back();
+        }else if(!$cart[$id]){
+            return redirect()->back();
+        }
+        if($cart[$id]){
+            unset($cart[$id]);
+        }
+        session()->put('cart',$cart);
+        return redirect()->back();
+    }
+    public function destroyCart(){
+        Session()->remove('cart');
+        return redirect()->back();
+    }
+    public  function  myCart(){
+        return view('cart.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Cart  $cart
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Cart $cart)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Cart  $cart
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Cart $cart)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Cart  $cart
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Cart $cart)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Cart  $cart
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Cart $cart)
-    {
-        //
-    }
 }

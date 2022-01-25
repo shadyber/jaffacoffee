@@ -24,7 +24,9 @@ class CreateItemsTable extends Migration
             $table->bigInteger('item_origion_id')->unsigned();
             $table->bigInteger('item_size_id')->unsigned();
             $table->bigInteger('roast_type_id')->unsigned();
-            $table->integer('stock_beginning_balance');
+            $table->integer('stock_beginning_balance')->default(1);
+            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('visit')->default(0);
 
             $table->timestamps();
         });

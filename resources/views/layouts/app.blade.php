@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US" class="scheme_original">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <title>Contacts &#8211; Hot Coffee</title>
+    <title>Contacts &#8211; Jafa Coffee</title>
 
     <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
     <link rel='stylesheet' href='/js/vendor/woo/woocommerce-layout.css' type='text/css' media='all' />
@@ -22,10 +21,8 @@
     <link rel='stylesheet' href='/css/doc-style.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/skin.responsive.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='/js/vendor/comp/comp.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/custom.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/core.messages.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='/js/vendor/magnific/magnific-popup.css' type='text/css' media='all' />
 </head>
 
 <body class="page contactspg body_filled article_style_stretch scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide preloader vc_responsive">
@@ -142,14 +139,19 @@
 </div>
 
 <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
-
 <div class="custom_html_section"></div>
 
 <script type='text/javascript' src='/js/vendor/jquery/jquery.js'></script>
 <script type='text/javascript' src='/js/vendor/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='/js/custom/custom.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/add-to-cart.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/woocommerce-add-to-cart.js'></script>
 <script type='text/javascript' src='/js/vendor/modernizr.min.js'></script>
 <script type='text/javascript' src='/js/vendor/ui/core.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/jquery.blockUI.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/woocommerce.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/jquery.cookie.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/cart-fragments.min.js'></script>
 <script type='text/javascript' src='/js/vendor/superfish.js'></script>
 <script type='text/javascript' src='/js/custom/jquery.slidemenu.js'></script>
 <script type='text/javascript' src='/js/custom/core.utils.js'></script>
@@ -158,8 +160,35 @@
 <script type='text/javascript' src='/js/custom/embed.min.js'></script>
 <script type='text/javascript' src='/js/custom/shortcodes.js'></script>
 <script type='text/javascript' src='/js/custom/core.messages.js'></script>
-<script type='text/javascript' src='/js/vendor/comp/comp_front.min.js'></script>
+<script type='text/javascript' src='/js/custom/forms-api.min.js'></script>
 
+<script>
+    var qnt=1;
+    function getqnt(){
+        qnt = document.getElementById("qtybutton").value;
+    }
+    function getquantity(){
+        return qnt;
+    }
+    $( ".add-to-cart" ).click(function() {
+        var itemid=$(this).attr("itemid");
+        var cbtn=$(this);
+        var itemqnt=$(this).attr('qnt')
+        $.get("/multipleaddtocart/"+itemid+"/"+qnt, function(data){
+            // Display the returned data in browser
+            cbtn.animate({
+                opacity: 0.25,
+                left: "+=5000",
+                top: "-=5000",
+                height: "toggle"
+            }, 50, function() {
+                // Animation complete.
+            });
+            $('#cartCount').html(data);
+        });
+    });
+</script>
+@yield('js')
 </body>
 
 </html>
