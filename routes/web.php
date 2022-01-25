@@ -35,7 +35,5 @@ Route::get('/privacy', function(){
     return view('privacy');
 });
 
-Route::get('/contact', function(){
-    return view('contact')->with('address', \App\Models\Address::all()->last());
-});
+Route::get('/contact', [\App\Http\Controllers\AddressController::class,'index'])->name('contact');
 

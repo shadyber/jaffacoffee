@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Address;
+use App\Models\About;
 use Illuminate\Http\Request;
 
-class AddressController extends Controller
+class AboutController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,6 @@ class AddressController extends Controller
     public function index()
     {
         //
-        return view('contact')->with(['address'=>Address::all()->last()]);
     }
 
     /**
@@ -42,10 +41,10 @@ class AddressController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Address  $address
+     * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function show(Address $address)
+    public function show(About $about)
     {
         //
     }
@@ -53,10 +52,10 @@ class AddressController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Address  $address
+     * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function edit(Address $address)
+    public function edit(About $about)
     {
         //
     }
@@ -65,10 +64,10 @@ class AddressController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Address  $address
+     * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Address $address)
+    public function update(Request $request, About $about)
     {
         //
     }
@@ -76,10 +75,10 @@ class AddressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Address  $address
+     * @param  \App\Models\About  $about
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Address $address)
+    public function destroy(About $about)
     {
         //
     }

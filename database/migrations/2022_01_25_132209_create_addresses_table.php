@@ -15,17 +15,20 @@ class CreateAddressesTable extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
-            $table->string('addres1');
-            $table->string('addres2');
+            $table->string('address1');
+            $table->string('address2');
             $table->string('tel');
-            $table->string('tel2');
+            $table->string('tel2')->nullable();
             $table->string('email');
+            $table->string('email2');
+            $table->string('longt')->nullable();
+            $table->string('lat')->nullable();
 
-            $table->string('facebook_page');
-            $table->string('instagram_page');
-            $table->string('linkedin_page');
-            $table->string('telegram_channel');
-            $table->string('whatsapp_number');
+            $table->string('facebook_page')->nullable();
+            $table->string('instagram_page')->nullable();
+            $table->string('linkedin_page')->nullable();
+            $table->string('telegram_channel')->nullable();
+            $table->string('whatsapp_number')->nullable();
             $table->timestamps();
         });
     }

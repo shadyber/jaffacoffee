@@ -53,73 +53,9 @@
         </div>
 
       @yield('content')
-        <footer class="contacts_wrap scheme_original">
-            <div class="contacts_wrap_inner">
-                <div class="content_wrap">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="images/logo_footer.png" class="logo_footer" alt="" width="95" height="90">
-                        </a>
-                    </div>
-                    <div class="contacts_address">
-                        <div class="about_company">
-                            Morbi sed justo felis. Phasellus condimentum ornare maximus.
-                            Nulla convallis tortor pellentesque tortor vulputate, eget bibendum nibh interdum.
-                        </div>
-                        <address class="address_right">
-                            Phone: 888-456-7890<br>
-                            Fax: 889-098-7654
-                        </address>
-                        <address class="address_left">
-                            Chicago, IL 60606<br>
-                            123, New Lenox
-                        </address>
-                    </div>
-                    <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_medium">
-                        <div class="sc_socials_item">
-                            <a href="#" target="_blank" class="social_icons social_twitter">
-                                <span class="icon-twitter"></span>
-                            </a>
-                        </div>
-                        <div class="sc_socials_item">
-                            <a href="#" target="_blank" class="social_icons social_facebook">
-                                <span class="icon-facebook"></span>
-                            </a>
-                        </div>
-                        <div class="sc_socials_item">
-                            <a href="#" target="_blank" class="social_icons social_gplus">
-                                <span class="icon-gplus"></span>
-                            </a>
-                        </div>
-                        <div class="sc_socials_item">
-                            <a href="#" target="_blank" class="social_icons social_linkedin">
-                                <span class="icon-linkedin"></span>
-                            </a>
-                        </div>
-                        <div class="sc_socials_item">
-                            <a href="#" target="_blank" class="social_icons social_skype">
-                                <span class="icon-skype"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <div class="copyright_wrap copyright_style_text  scheme_original">
-            <div class="copyright_wrap_inner">
-                <div class="content_wrap">
-                    <div class="copyright_text">
-                        <a href="#">ThemeRex</a> © 2015 All Rights Reserved
-                        <a href="#">Terms of Use</a> and
-                        <a href="#">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+   @include('inc.footer')
     </div>
+
 </div>
 
 <div id="popup_registration" class="popup_wrap popup_registration bg_tint_light">
