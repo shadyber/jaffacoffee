@@ -1,83 +1,229 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<!DOCTYPE html>
+<html lang="en-US" class="scheme_original">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <title>Contacts &#8211; Hot Coffee</title>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
+    <link rel='stylesheet' href='/js/vendor/woo/woocommerce-layout.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/js/vendor/woo/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' href='/js/vendor/woo/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/fontello/css/fontello.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/core.animation.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/shortcodes.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/js/vendor/woo/plugin.woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/skin.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/doc-style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/skin.responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/js/vendor/comp/comp.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/custom.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/css/core.messages.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/js/vendor/magnific/magnific-popup.css' type='text/css' media='all' />
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+<body class="page contactspg body_filled article_style_stretch scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide preloader vc_responsive">
+<div id="page_preloader"></div>
+<a id="toc_home" class="sc_anchor" title="Home" data-description="&lt;i&gt;Return to Home&lt;/i&gt; - &lt;br&gt;navigate to home page of the site" data-icon="icon-home" data-url="index.html" data-separator="yes"></a>
+<a id="toc_top" class="sc_anchor" title="To Top" data-description="&lt;i&gt;Back to top&lt;/i&gt; - &lt;br&gt;scroll to top of the page" data-icon="icon-double-up" data-url="" data-separator="yes"></a>
 
-                    </ul>
+<div class="body_wrap">
+    <div class="page_wrap">
+        <div class="top_panel_fixed_wrap"></div>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
+        @include('inc.header');
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+        <div class="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
+            <div class="top_panel_title_inner top_panel_inner_style_3 title_present_inner breadcrumbs_present_inner breadcrumbs_1">
+                <div class="content_wrap">
+                    <h1 class="page_title">@yield('title')</h1>
+                    <div class="breadcrumbs">
+                        <a class="breadcrumbs_item home" href="/">Home</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <span class="breadcrumbs_item current">@yield('sub_title')</span>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+      @yield('content')
+        <footer class="contacts_wrap scheme_original">
+            <div class="contacts_wrap_inner">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo_footer.png" class="logo_footer" alt="" width="95" height="90">
+                        </a>
+                    </div>
+                    <div class="contacts_address">
+                        <div class="about_company">
+                            Morbi sed justo felis. Phasellus condimentum ornare maximus.
+                            Nulla convallis tortor pellentesque tortor vulputate, eget bibendum nibh interdum.
+                        </div>
+                        <address class="address_right">
+                            Phone: 888-456-7890<br>
+                            Fax: 889-098-7654
+                        </address>
+                        <address class="address_left">
+                            Chicago, IL 60606<br>
+                            123, New Lenox
+                        </address>
+                    </div>
+                    <div class="sc_socials sc_socials_type_icons sc_socials_shape_square sc_socials_size_medium">
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_twitter">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_facebook">
+                                <span class="icon-facebook"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_gplus">
+                                <span class="icon-gplus"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_linkedin">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_skype">
+                                <span class="icon-skype"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright_wrap copyright_style_text  scheme_original">
+            <div class="copyright_wrap_inner">
+                <div class="content_wrap">
+                    <div class="copyright_text">
+                        <a href="#">ThemeRex</a> © 2015 All Rights Reserved
+                        <a href="#">Terms of Use</a> and
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+</div>
+
+<div id="popup_registration" class="popup_wrap popup_registration bg_tint_light">
+    <a href="#" class="popup_close"></a>
+    <div class="form_wrap">
+        <form name="registration_form" method="post" class="popup_form registration_form">
+            <input type="hidden" name="redirect_to" value="#" />
+            <div class="form_left">
+                <div class="popup_form_field login_field iconed_field icon-user">
+                    <input type="text" id="registration_username" name="registration_username" value="" placeholder="User name (login)">
+                </div>
+                <div class="popup_form_field email_field iconed_field icon-mail">
+                    <input type="text" id="registration_email" name="registration_email" value="" placeholder="E-mail">
+                </div>
+                <div class="popup_form_field agree_field">
+                    <input type="checkbox" value="agree" id="registration_agree" name="registration_agree">
+                    <label for="registration_agree">I agree with</label>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+                <div class="popup_form_field submit_field">
+                    <input type="submit" class="submit_button" value="Sign Up">
+                </div>
+            </div>
+            <div class="form_right">
+                <div class="popup_form_field password_field iconed_field icon-lock">
+                    <input type="password" id="registration_pwd" name="registration_pwd" value="" placeholder="Password">
+                </div>
+                <div class="popup_form_field password_field iconed_field icon-lock">
+                    <input type="password" id="registration_pwd2" name="registration_pwd2" value="" placeholder="Confirm Password">
+                </div>
+                <div class="popup_form_field description_field">Minimum 6 characters</div>
+            </div>
+        </form>
+        <div class="result message_block"></div>
+    </div>
+</div>
+<div id="popup_login" class="popup_wrap popup_login bg_tint_light">
+    <a href="#" class="popup_close"></a>
+    <div class="form_wrap">
+        <div class="form_left">
+            <form action="#" method="post" name="login_form" class="popup_form login_form">
+                <input type="hidden" name="redirect_to" value="#">
+                <div class="popup_form_field login_field iconed_field icon-user">
+                    <input type="text" id="log" name="log" value="" placeholder="Login or Email">
+                </div>
+                <div class="popup_form_field password_field iconed_field icon-lock">
+                    <input type="password" id="password" name="pwd" value="" placeholder="Password">
+                </div>
+                <div class="popup_form_field remember_field">
+                    <a href="#" class="forgot_password">Forgot password?</a>
+                    <input type="checkbox" value="forever" id="rememberme" name="rememberme">
+                    <label for="rememberme">Remember me</label>
+                </div>
+                <div class="popup_form_field submit_field">
+                    <input type="submit" class="submit_button" value="Login">
+                </div>
+            </form>
+        </div>
+        <div class="form_right">
+            <div class="login_socials_title">You can login using your social profile</div>
+            <div class="login_socials_list">
+                <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                    <div class="sc_socials_item">
+                        <a href="#" target="_blank" class="social_icons social_facebook">
+                            <span class="icon-facebook"></span>
+                        </a>
+                    </div>
+                    <div class="sc_socials_item">
+                        <a href="#" target="_blank" class="social_icons social_twitter">
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </div>
+                    <div class="sc_socials_item">
+                        <a href="#" target="_blank" class="social_icons social_gplus">
+                            <span class="icon-gplus"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="login_socials_problem"><a href="#">Problem with login?</a></div>
+            <div class="result message_block"></div>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
+
+<div class="custom_html_section"></div>
+
+<script type='text/javascript' src='/js/vendor/jquery/jquery.js'></script>
+<script type='text/javascript' src='/js/vendor/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/js/custom/custom.js'></script>
+<script type='text/javascript' src='/js/vendor/modernizr.min.js'></script>
+<script type='text/javascript' src='/js/vendor/ui/core.min.js'></script>
+<script type='text/javascript' src='/js/vendor/superfish.js'></script>
+<script type='text/javascript' src='/js/custom/jquery.slidemenu.js'></script>
+<script type='text/javascript' src='/js/custom/core.utils.js'></script>
+<script type='text/javascript' src='/js/custom/core.init.js'></script>
+<script type='text/javascript' src='/js/custom/init.js'></script>
+<script type='text/javascript' src='/js/custom/embed.min.js'></script>
+<script type='text/javascript' src='/js/custom/shortcodes.js'></script>
+<script type='text/javascript' src='/js/custom/core.messages.js'></script>
+<script type='text/javascript' src='/js/vendor/comp/comp_front.min.js'></script>
+
 </body>
+
 </html>

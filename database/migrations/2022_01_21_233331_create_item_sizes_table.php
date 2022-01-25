@@ -15,6 +15,10 @@ class CreateItemSizesTable extends Migration
     {
         Schema::create('item_sizes', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->longText('detail');
+
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }

@@ -20,3 +20,22 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/item',\App\Http\Controllers\ItemController::class);
+
+
+
+Route::get('/about',function (){
+    return view('about');
+});
+
+Route::get('/terms', function(){
+    return view('terms');
+});
+Route::get('/privacy', function(){
+    return view('privacy');
+});
+
+Route::get('/contact', function(){
+    return view('contact')->with('address', \App\Models\Address::all()->last());
+});
+

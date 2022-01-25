@@ -15,6 +15,9 @@ class CreateItemOrigionsTable extends Migration
     {
         Schema::create('item_origions', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->longText('detail');
+            $table->string('icon')->nullable();
             $table->timestamps();
         });
     }
