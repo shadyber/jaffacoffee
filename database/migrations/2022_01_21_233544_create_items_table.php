@@ -15,7 +15,8 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('name');
+            $table->string('slug');
             $table->longText('detail');
             $table->double('price');
             $table->string('thumb');
@@ -23,9 +24,11 @@ class CreateItemsTable extends Migration
 
             $table->bigInteger('item_origion_id')->unsigned();
             $table->bigInteger('item_size_id')->unsigned();
-            $table->bigInteger('roast_type_id')->unsigned();
+            $table->bigInteger('item_roast_type_id')->unsigned();
             $table->integer('stock_beginning_balance')->default(1);
             $table->bigInteger('user_id')->unsigned();
+            $table->string('badge')->nullable();
+            $table->string('tags')->nullable();
             $table->bigInteger('visit')->default(0);
 
             $table->timestamps();

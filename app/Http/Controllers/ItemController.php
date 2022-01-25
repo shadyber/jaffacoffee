@@ -80,11 +80,8 @@ class ItemController extends Controller
                 'tags'=>$request->input('tags'),
                 'color'=>$request->input('color'),
                 'price'=>$request->input('price'),
-                'weight'=>$request->input('weight'),
-                'init_qnt'=>$request->input('init_qnt'),
-                'badge'=>$request->input('badge'),
-                'user_id'=>auth()->user()->id,
-                'item_category_id'=>$request->input('item_category_id'),
+
+                'user_id'=>auth()->user()->id
             ]
         );
 
