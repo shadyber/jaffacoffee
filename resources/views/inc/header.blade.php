@@ -21,13 +21,15 @@
 
                             <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
                                 <ul class="sub-menu">
-                                    <li class="menu-item"><a href="/blog/1">Blog With Sidebar</a></li>
-
-
+                                    <li class="menu-item"><a href="/blog">All Blogs</a></li>
+ 
                                 </ul>
                             </li>
 
-                            <li class="menu-item"><a href="/item">Shop</a></li>
+                            <li class="menu-item "><a href="/item">Shop</a>
+
+
+                            </li>
                             <li class="menu-item"><a href="/contact">Contact Us</a></li>
                             <li class="menu-item"><a href="/about">About Us</a></li>
                         </ul>

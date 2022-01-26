@@ -25,6 +25,12 @@ Route::resource('/item',\App\Http\Controllers\ItemController::class);
 
 
 
+
+Route::resource('/blog',App\Http\Controllers\BlogController::class);
+Route::resource('/blogs',App\Http\Controllers\AdminBlogController::class);
+Route::resource('/blogcategory',App\Http\Controllers\BlogCategoryController::class);
+
+
 Route::get('/addtocart/{id}',[CartController::class,'addToCart'])->name('addtocart');
 Route::get('/multipleaddtocart/{id}/{qnt}',[CartController::class,'addMultipleToCart'])->name('addmultipletocart');
 Route::get('/removecart/{id}/',[CartController::class,'removeCart'])->name('removeCart');
