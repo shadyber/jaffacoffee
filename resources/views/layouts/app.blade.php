@@ -47,7 +47,7 @@
     <div class="page_wrap">
         <div class="top_panel_fixed_wrap"></div>
 
-        @include('inc.header');
+        @include('inc.header')
 
         <div class="top_panel_title top_panel_style_3 title_present breadcrumbs_present scheme_original">
             <div class="top_panel_title_inner top_panel_inner_style_3 title_present_inner breadcrumbs_present_inner breadcrumbs_1">
