@@ -1,4 +1,6 @@
 @extends('layouts.shop')
+@section('title','Shop')
+@section('sub_title','Front')
 @section('content')
 
         <div class="page_content_wrap page_paddings_yes">
@@ -18,32 +20,8 @@
                     </div>
                     <p class="woocommerce-result-count">
 
-                    <form  method="get" class="woocommerce-ordering inline" action="/item">
 
-
-
-                        <select name="itemorigion" class="origion">
-                            <option value="">Coffee Origion</option>
-                            @foreach(\App\Models\ItemOrigion::all() as $origion)
-                                <option value="{{$origion->slug}}" >{{$origion->title}}</option>
-                            @endforeach
-                        </select>
-                        <input type="hidden" name="q" value="#">
-                    </form>
-
-                    <form  method="get" action="/item" class="woocommerce-ordering inline">
-
-
-
-                        <select name="roasttype" class="roastype">
-                            <option value="">Roast Type</option>
-                            @foreach(\App\Models\ItemRoastType::all() as $roastype)
-                                <option value="{{$roastype->slug}}" >{{$roastype->title}}</option>
-                            @endforeach
-                        </select>
-
-                    </form>
-                    <form class="woocommerce-ordering" method="get">
+                     <form class="woocommerce-ordering" method="get">
 
 
 
