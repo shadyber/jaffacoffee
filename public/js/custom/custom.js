@@ -1,27 +1,27 @@
-	
+
 jQuery( document ).on( "ready", function() {
 	"use strict";
-    if (jQuery(".rev_slider").length > 0)  
+    if (jQuery(".rev_slider").length > 0)
 		initRevSlider();
-	if (jQuery(".esg-grid").length > 0)  
+	if (jQuery(".esg-grid").length > 0)
 		initEssentialGrid();
-	if (jQuery(".booked-calendar").length > 0)  
+	if (jQuery(".booked-calendar").length > 0)
 		initDatepicker();
 });
 
 
-	
+
 window._wpemojiSettings = {
 	"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/",
 	"ext": ".png",
 	"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/",
 	"svgExt": ".svg",
 	"source": {
-		"concatemoji": "http:\/\/hotcoffee.themerex.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"
+		"concatemoji": "http:\/\/jafacoffee.com\/js\/wp-emoji-release.min.js?ver=4.7.5"
 	}
 };
-	
-	
+
+
 ! function(a, b, c) {
 	"use strict";
 
@@ -71,7 +71,7 @@ window._wpemojiSettings = {
 
 function initRevSlider() {
 	"use strict";
-	
+
 	jQuery(window).on('load',function() {
 		// CUSTOM AJAX CONTENT LOADING FUNCTION
 		var ajaxRevslider = function(obj) {
@@ -137,9 +137,9 @@ function initRevSlider() {
 		}, 30);
 	});
 
-	
-	
-	
+
+
+
 	var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
 	var htmlDivCss = ".tp-caption.Hotcoffee-style-1,.Hotcoffee-style-1{color:rgba(66,57,48,1.00);font-size:85px;line-height:90px;font-weight:400;font-style:normal;font-family:Grand Hotel;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-2,.Hotcoffee-style-2{color:rgba(66,57,48,1.00);font-size:92px;line-height:98px;font-weight:400;font-style:normal;font-family:Grand Hotel;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-3,.Hotcoffee-style-3{color:rgba(66,57,48,1.00);font-size:141px;line-height:150px;font-weight:700;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-4,.Hotcoffee-style-4{color:rgba(66,57,48,1.00);font-size:65px;line-height:72px;font-weight:700;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:0.5px;padding:0 8px}.tp-caption.Hotcoffee-style-5,.Hotcoffee-style-5{color:rgba(66,57,48,1.00);font-size:90px;line-height:98px;font-weight:700;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-6,.Hotcoffee-style-6{color:rgba(66,57,48,1.00);font-size:104px;line-height:112px;font-weight:400;font-style:normal;font-family:Grand Hotel;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}";
 	if (htmlDiv) {
@@ -149,8 +149,8 @@ function initRevSlider() {
 		htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
 		document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
 	}
-	
-	
+
+
 	/******************************************
 		-	PREPARE PLACEHOLDER FOR SLIDER	-
 	******************************************/
@@ -215,7 +215,7 @@ function initRevSlider() {
 		} else {
 			revapi1 = rev_slider_1_1.show().revolution({
 				sliderType: "standard",
-				jsFileLocation: "//hotcoffee.themerex.net/wp-content/plugins/revslider/public/assets/js/",
+				jsFileLocation: "//jafacoffee.com/js/",
 				sliderLayout: "auto",
 				dottedOverlay: "none",
 				delay: 9000,
@@ -263,7 +263,7 @@ function initRevSlider() {
 			});
 		}
 	});
-		
+
 	var htmlDiv=document.getElementById("rs-plugin-settings-inline-css");
 	var htmlDivCss=".tp-caption.Hotcoffee-style-7,.Hotcoffee-style-7{color:rgba(255,255,255,1.00);font-size:89px;line-height:98px;font-weight:400;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-8,.Hotcoffee-style-8{color:rgba(255,255,255,1.00);font-size:26px;line-height:32px;font-weight:400;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:2px;padding:0 8px}.tp-caption.Hotcoffee-style-9,.Hotcoffee-style-9{color:rgba(255,255,255,1.00);font-size:16px;line-height:22px;font-weight:400;font-style:normal;font-family:Droid Serif;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:0.1px;padding:0 8px;font-family:Source Sans Pro}.tp-caption.no-style,.no-style{color:rgba(0,0,0,1.00);font-size:18px;line-height:18px;font-weight:900;font-style:normal;font-family:Raleway;padding:0px 0px 0px 0px;text-decoration:none;text-align:left;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0px 0px 0px 0px;letter-spacing:inherit;background-color:transparent;border-color:inherit;border-radius:0 0 0 0;border-width:0;color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;padding:inherit}";
 	if(htmlDiv) {
@@ -344,7 +344,7 @@ function initRevSlider() {
 		}
 		else {
 			revapi2=rev_slider_2_2.show().revolution( {
-				sliderType:"standard", jsFileLocation:"//hotcoffee.themerex.net/wp-content/plugins/revslider/public/assets/js/", sliderLayout:"auto", dottedOverlay:"none", delay:9000, navigation: {
+				sliderType:"standard", jsFileLocation:"//jafacoffee.com/assets/js/", sliderLayout:"auto", dottedOverlay:"none", delay:9000, navigation: {
 					keyboardNavigation:"off", keyboard_direction: "horizontal", mouseScrollNavigation:"off", onHoverStop:"off", touch: {
 						touchenabled: "on", swipe_threshold: 75, swipe_min_touches: 50, swipe_direction: "horizontal", drag_block_vertical: false
 					}
@@ -361,8 +361,8 @@ function initRevSlider() {
 	}
 
 );
-	
-	
+
+
 }
 
 
@@ -431,7 +431,7 @@ function initEssentialGrid() {
 		else
 			return lastamount;
 	}
-	
+
 	var esg_grid_3_1 = jQuery("#esg-grid-3-1");
 	if ("cobbles" === "even") {
 		var coh = 0,
@@ -552,8 +552,8 @@ function initEssentialGrid() {
 		} catch (e) {}
 
 	});
-	
-	
+
+
 	function eggbfc(winw, resultoption) {
 		var lasttop = winw,
 			lastbottom = 0,
@@ -736,7 +736,7 @@ function initEssentialGrid() {
 		} catch (e) {}
 
 	});
-	
+
 	function eggbfc(winw, resultoption) {
 		var lasttop = winw,
 			lastbottom = 0,
@@ -922,8 +922,8 @@ function initEssentialGrid() {
 		} catch (e) {}
 
 	});
-	
-	
+
+
 	function eggbfc(winw, resultoption) {
 		var lasttop = winw,
 			lastbottom = 0,
@@ -1107,8 +1107,8 @@ function initEssentialGrid() {
 		} catch (e) {}
 
 	});
-	
-	
+
+
 }
 
 
@@ -1139,9 +1139,9 @@ function getStorage(){
 	if (HOTCOFFEE_STORAGE['theme_font'] === '') HOTCOFFEE_STORAGE['theme_font'] = 'Source Sans Pro';
 	HOTCOFFEE_STORAGE['theme_skin_color'] = '';
 	HOTCOFFEE_STORAGE['theme_skin_bg_color'] = '';
-	
-	
-	if (typeof HOTCOFFEE_STORAGE === 'undefined') 
+
+
+	if (typeof HOTCOFFEE_STORAGE === 'undefined')
 		var HOTCOFFEE_STORAGE = {};
 			HOTCOFFEE_STORAGE["strings"] = {
 			ajax_error: "Invalid server answer",
@@ -1188,7 +1188,7 @@ function getStorage(){
 			editor_caption_close: "Close"
 		};
 
-	if (typeof HOTCOFFEE_STORAGE === 'undefined') 
+	if (typeof HOTCOFFEE_STORAGE === 'undefined')
 	var HOTCOFFEE_STORAGE = {};
 		HOTCOFFEE_STORAGE['ajax_url'] = '';
 		HOTCOFFEE_STORAGE['ajax_nonce'] = '8d4007e6be';
@@ -1231,8 +1231,8 @@ function getStorage(){
 		HOTCOFFEE_STORAGE['viewmore_busy'] = false;
 		HOTCOFFEE_STORAGE['video_resize_inited'] = false;
 		HOTCOFFEE_STORAGE['top_panel_height'] = 0;
-		
-		
+
+
 		return HOTCOFFEE_STORAGE;
 }
 

@@ -13,15 +13,16 @@
                     <div id="product-140" class="post-140 product has-post-thumbnail first sale">
                         <span class="onsale">Sale!</span>
                         <div class="images">
-                            <a href="/images/2000x2000.png" class="woocommerce-main-image zoom hover_icon hover_icon_view" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
-                                <img src="/images/2000x2000.png" class="attachment-shop_single size-shop_single" alt="americano" title="americano">
+                            <a href="{{$item->photo}}" class="woocommerce-main-image zoom hover_icon hover_icon_view" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
+                                <img src="{{$item->thumb}}" class="attachment-shop_single size-shop_single" alt="americano" title="americano">
                             </a>
                             <div class="thumbnails columns-4">
-                                <a href="/images/2000x2000.png" class="zoom first" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
-                                    <img src="/images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="croissant" title="croissant"></a>
-                                <a href="/images/2000x2000.png" class="zoom" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
-                                    <img src="/images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="panini" title="panini">
-                                </a>
+                                @foreach($item->itemPhotos as $photo)
+                                <a href="{{$photo->photo}}" class="zoom first" title="" data-rel="prettyPhoto[product-gallery]" rel="magnific">
+                                    <img src="{{$photo->thumb}}" class="attachment-shop_thumbnail size-shop_thumbnail" alt="{{$item->name}}" title="{{$item->name}}"></a>
+                                @endforeach
+
+
                             </div>
                         </div>
                         <div class="summary entry-summary">
@@ -45,12 +46,12 @@
                                     {{$item->detail}}
                                 </p>
                             </div>
-                            <form class="cart" method="post" enctype="multipart/form-data">
+                            <form class="cart" method="get" action="#" itemid="{{$item->id}}" >
                                 <div class="quantity">
                                     <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
                                     <span class="q_inc"></span><span class="q_dec"></span></div>
                                 <input type="hidden" name="add-to-cart" value="140">
-                                <button type="submit" class="single_add_to_cart_button button alt">Add to cart</button>
+                                <a href="#" class="single_add_to_cart_button button alt add-to-cart" itemid="{{$item->id}}">Add to cart</a>
                             </form>
                             <div class="product_meta">
                                     <span class="posted_in">Category:
@@ -136,7 +137,7 @@
                                         <div class="post_item_wrap">
                                             <div class="post_featured">
                                                 <div class="post_thumb">
-                                                    <a class="hover_icon hover_icon_link" href="={{$ri->photo}}">
+                                                    <a class="hover_icon hover_icon_link" href="/item/{{$ri->slug}}">
                                                         <img src="{{$ri->thumb}}" class="attachment-shop_catalog size-shop_catalog" alt="{{$ri->name}}" title="{{$ri->name}}">
                                                     </a>
                                                 </div>
@@ -151,7 +152,7 @@
                                                     </span>
                                                 </span>
                                                 <a href="#"></a>
-                                                <a rel="nofollow" href="#" data-quantity="1" data-product_id="139" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                                <a rel="nofollow" href="#" data-quantity="1" data-product_id="139" itemid="{{$ri->id}}" qnt="1" data-product_sku="" class="button product_type_simple add_to_cart_button add-to-cart">Add to cart</a>
                                             </div>
                                         </div>
                                     </li>
@@ -170,14 +171,8 @@
                     <aside class="widget woocommerce widget_top_rated_products">
                         <h5 class="widget_title">Top Rated Products</h5>
                         <ul class="product_list_widget">
-                            <li>
-                                <a href="single-product.html" title="Smooth Iced Coffee">
-                                    <img src="/images/2000x2000.png" class="attachment-shop_thumbnail size-shop_thumbnail" alt="" />
-                                    <span class="product-title">Smooth Iced Coffee</span>
-                                </a>
-                                <span class="woocommerce-Price-amount amount">
-                                        <span class="woocommerce-Price-currencySymbol">&#36;</span>15.00</span>
-                            </li>
+
+
 
                         </ul>
                     </aside>

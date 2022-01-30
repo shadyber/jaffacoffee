@@ -10,6 +10,7 @@
     <link rel="alternate" type="application/rss+xml" title="Hot Coffee &raquo;@yield('title')" href="/item/" />
     <meta property="og:image" content="@yield('image')" />
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel='stylesheet' href='/js/vendor/magnific/magnific-popup.css' type='text/css' media='all' />
     <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
     <link rel='stylesheet' href='/js/vendor/prettyPhoto/prettyPhoto.css' type='text/css' media='all' />
@@ -60,7 +61,7 @@
 
 
     @include('inc.footer')
-          
+
     </div>
 </div>
 <div id="popup_registration" class="popup_wrap popup_registration bg_tint_light">
@@ -173,6 +174,32 @@
 <script type='text/javascript' src='/js/custom/core.utils.js'></script>
 <script type='text/javascript' src='/js/custom/core.init.js'></script>
 <script type='text/javascript' src='/js/custom/init.js'></script>
+<script>
+    var qnt=1;
+    function getqnt(){
+        qnt = document.getElementById("qtybutton").value;
+    }
+    function getquantity(){
+        return qnt;
+    }
+    $( ".add-to-cart" ).click(function() {
+        var itemid=$(this).attr("itemid");
+        var cbtn=$(this);
+        var itemqnt=$(this).attr('qnt')
+        $.get("/multipleaddtocart/"+itemid+"/"+qnt, function(data){
+            // Display the returned data in browser
+            cbtn.animate({
+                opacity: 0.25,
+                left: "+=5000",
+                top: "-=5000",
+                height: "toggle"
+            }, 50, function() {
+                // Animation complete.
+            });
+            $('#cartCount').html(data);
+        });
+    });
+</script>
 </body>
 
 </html>
