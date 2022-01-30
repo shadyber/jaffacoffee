@@ -2,10 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Item;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Role;
 
 class AdminItemController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+
+    public function __construct()
+    {
+        $this->middleware(['auth','verified']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +28,11 @@ class AdminItemController extends Controller
      */
     public function index()
     {
-        //
+User::isAdmin();
+           $items=Item::orderBy('id','desc')->paginate(10);
+           return view('admin.item.index')->with(['items'=>$items]);
+
+
     }
 
     /**
@@ -24,6 +43,9 @@ class AdminItemController extends Controller
     public function create()
     {
         //
+
+        User::isAdmin();
+        return view('admin.item.create');
     }
 
     /**
@@ -35,6 +57,8 @@ class AdminItemController extends Controller
     public function store(Request $request)
     {
         //
+
+        User::isAdmin();
     }
 
     /**
@@ -46,6 +70,9 @@ class AdminItemController extends Controller
     public function show($id)
     {
         //
+
+        User::isAdmin();
+
     }
 
     /**
@@ -57,6 +84,8 @@ class AdminItemController extends Controller
     public function edit($id)
     {
         //
+
+        User::isAdmin();
     }
 
     /**
@@ -69,6 +98,8 @@ class AdminItemController extends Controller
     public function update(Request $request, $id)
     {
         //
+
+        User::isAdmin();
     }
 
     /**
@@ -80,5 +111,7 @@ class AdminItemController extends Controller
     public function destroy($id)
     {
         //
+
+        User::isAdmin();
     }
 }

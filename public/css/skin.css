@@ -549,7 +549,7 @@ body,
 .menu_main_nav > li ul li a:hover,
 .menu_main_nav > li ul li.current-menu-item > a,
 .menu_main_nav > li ul li.current-menu-ancestor > a {
-    color: #8c7b57
+    color: #ecb881
 }
 .top_panel_inner_style_1 .menu_main_nav > li ul li a,
 .top_panel_inner_style_2 .menu_main_nav > li ul li a {
@@ -744,8 +744,8 @@ body,
 	color: #232a34;
 }
 .pushy_inner {
-	color: #8a8a8a;
-	background-color:#e4e7e8;
+	color: #8a8a8a; 
+	background-color:#e4e7e8; 
 }
 .pushy_inner ul ul {
 	background-color: rgba(247, 247, 247, 0.8);
@@ -761,7 +761,7 @@ body,
 .top_panel_inner_style_4 .popup_wrap .sc_socials.sc_socials_type_icons a,
 .top_panel_inner_style_5 .popup_wrap .popup_close,
 .top_panel_inner_style_5 .popup_wrap .sc_socials.sc_socials_type_icons a {
-	color: #8a8a8a;
+	color: #8a8a8a; 
 }
 .top_panel_inner_style_3 .popup_wrap .popup_close:hover,
 .top_panel_inner_style_4 .popup_wrap .popup_close:hover,
@@ -864,7 +864,7 @@ body,
 /* Related posts */
 .post_item_related .post_info,
 .post_item_related .post_info a {
-    color: #8c7b57;
+    color: #ecb881;
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
@@ -1066,7 +1066,7 @@ body,
 .widget_area_inner .widget_categories li a,
 .widget_area_inner .post_cat,
 .widget_area_inner .post_cat a {
-    color: #8c7b57;
+    color: #ecb881;
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
@@ -1074,7 +1074,7 @@ body,
     letter-spacing: 0.8px;
 }
 .widget_area_inner .widget_categories li:before {
-    color: #8c7b57;
+    color: #ecb881;
 }
 .widget_area_inner .post_info a {
     color: #8c8887;
@@ -1127,11 +1127,11 @@ body,
 /* Contacts */
 .contacts_wrap_inner {
 	color: #a6a19f;
-	background-color: #385445;
+	background-color: #211f1e;
 }
 .scheme_dark .contacts_wrap_inner {
 	color: #a6a19f;
-	background-color: #385445;
+	background-color: #211f1e;
 }
 .scheme_light .contacts_wrap_inner {
 	color: #8a8a8a;
@@ -1158,7 +1158,7 @@ body,
     text-align: center;
 }
 .copyright_wrap_inner {
-	background-color: #385445;
+	background-color: #211f1e;
 }
 .copyright_wrap_inner .copyright_text {
 	color: #a6a19f;
@@ -1356,7 +1356,7 @@ body,
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
 	background: #acb4b6;
 }
-.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range {
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range { 
 	background-color: #232a34;
 }
 
@@ -1577,14 +1577,14 @@ button:hover:after,
 
 .sc_button_style_border_2.sc_button:hover,
 .sc_button_style_border_2.sc_button {
-    color: #8c7b57;
+    color: #ecb881;
 }
 .sc_button_style_border_2.sc_button {
     border-color: #000000;
 }
 .sc_button_style_border_2.sc_button:hover,
 .sc_button_style_border_2.sc_button:after {
-    border-color: #8c7b57;
+    border-color: #ecb881;
 }
 
 

@@ -30,11 +30,13 @@
 
 
                             </li>
+
                             <li class="menu-item"><a href="/contact">Contact Us</a></li>
                             <li class="menu-item"><a href="/about">About Us</a></li>
 
                         </ul>
                     </nav>
+
                     <div class="contact_cart">
                         <a href="#" class="top_panel_cart_button" data-items="0" data-summa="&#036;0.00">
                             <span class="contact_icon icon-shopping"></span>
@@ -52,9 +54,15 @@
                                         <div class="widget_shopping_cart_content">
                                             <ul class="cart_list product_list_widget ">
                                                 @foreach(\App\Models\Cart::myCart() as $cart)
-                                                <li class="empty">No products in the cart.</li>
+                                                <li class="">
+                                                    <img src="{{$cart['thumb']}}" alt="{{$cart['name']}}" width="32px" height="32px">
+                                                    {{$cart['name']}} x {{$cart['quantity']}}</li>
                                                     @endforeach
-                                            </ul>
+
+                                            <div class="bottom">
+                                                <a href="/mycart" class="sc_form_item sc_form_button">My Cart |   </a>
+                                                <a href="/checkout" class="sc_form_item sc_form_buttonart">| Checkout</a>
+                                            </div>  </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -71,13 +79,36 @@
                                         <span class="cart_summa">&#36; </span>
                                     </span>
                         </a>
+
                         <ul class="widget_area sidebar_cart sidebar">
                             <li>
                                 <div class="widget woocommerce widget_shopping_cart">
                                     <div class="hide_cart_widget_if_empty">
                                         <div class="widget_shopping_cart_content">
                                             <ul class="cart_list product_list_widget ">
-                                                <li class="empty"><a href="/logout">Logout <span class="icon-logout"></span>  </a></li>
+
+                                                @if(\Illuminate\Support\Facades\Auth::user())
+                                                <li class="empty">
+                                                    <a class="btn btn-danger btn-primary" href="{{ route('logout') }}"
+                                                                       onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+                                                        {{ __('Logout') }}
+                                                    </a>
+
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </li>
+                                                    @endif
+                                                @guest()
+
+                                                    <li class="empty">
+                                                        <a href="/login" class="btn btn-primary"> Login</a>
+                                                    </li>
+                                                        <li class="empty">
+                                                        <a href="/register" class="btn btn-primary"> Register</a>
+                                                    </li>
+                                                    @endguest
 
                                             </ul>
                                         </div>
@@ -106,8 +137,8 @@
                 <span class="contact_icon icon-shopping"></span>
                 <span class="contact_label contact_cart_label">Your cart:</span>
                 <span class="contact_cart_totals">
-		                    <span class="cart_items">0 Items</span> -
-                            <span class="cart_summa">&#36;0.00</span>
+		                    <span class="cart_items">{{count(\App\Models\Cart::myCart())}} Items</span> -
+                            <span class="cart_summa">&#36;{{\App\Models\Cart::totalCart()}}</span>
                         </span>
             </a>
             <ul class="widget_area sidebar_cart sidebar">
@@ -117,7 +148,7 @@
                             <div class="widget_shopping_cart_content">
                                 <ul class="cart_list product_list_widget">
                                     @foreach(\App\Models\Cart::myCart() as $cart)
-                                        <li class="empty">  <a href="/item/{{$cart['slug']}}">{{$cart['name']}}</a></li>
+                                        <li class="">  <a href="/item/{{$cart['slug']}}">{{$cart['name']}}</a></li>
                                     @endforeach
                                 </ul>
                             </div>

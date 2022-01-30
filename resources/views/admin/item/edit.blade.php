@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title','Edite '.$item->name)
+@section('title','Edit '.$item->name)
 @section('content')
 
         <div class="row">

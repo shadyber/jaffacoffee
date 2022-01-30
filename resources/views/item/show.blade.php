@@ -12,7 +12,7 @@
                     <article class="post_item post_item_single post_item_product">
                         <nav class="woocommerce-breadcrumb">
                             <a href="/">Home</a>&nbsp;/&nbsp;
-                            <a href="#">Drinks</a>&nbsp;/&nbsp;{{$item->name}}
+                            <a href="#"> C</a>&nbsp;/&nbsp;{{$item->name}}
                         </nav>
                         <div id="product-140" class="post-140 product has-post-thumbnail first sale">
                             <span class="onsale">Sale!</span>
@@ -29,23 +29,25 @@
                                 </div>
                             </div>
                             <div class="summary entry-summary">
-                                <h1 class="product_title entry-title">Americano</h1>
+                                <h1 class="product_title entry-title">{{$item->name}}</h1>
                                 <div>
                                     <p class="price">
                                         <del>
                                             <span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">$</span>10.00
+                                                <span class="woocommerce-Price-currencySymbol">$</span>{{$item->price}}
                                             </span>
                                         </del>
                                         <ins>
                                             <span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">$</span>7.00
+                                                <span class="woocommerce-Price-currencySymbol">$</span>{{$item->price}}
                                             </span>
                                         </ins>
                                     </p>
                                 </div>
                                 <div>
-                                    <p>Maecenas et nunc augue. Duis convallis nulla augue, vel pretium quam mattis nec. Pellentesque dapibus faucibus lacus quis feugiat.</p>
+                                    <p>
+                                        {{$item->detail}}
+                                    </p>
                                 </div>
                                 <form class="cart" method="post" enctype="multipart/form-data">
                                     <div class="quantity">
@@ -56,10 +58,10 @@
                                 </form>
                                 <div class="product_meta">
                                     <span class="posted_in">Category:
-                                        <a href="#" rel="tag">Drinks</a>
+                                        <a href="#" rel="tag">reoast type</a>
                                     </span>
                                     <span class="product_id">Product ID:
-                                        <span>140</span>
+                                        <span>Item-{{$item->id}}</span>
                                     </span>
                                 </div>
                             </div>
@@ -69,20 +71,12 @@
                                         <a href="#tab-description">Description</a>
                                     </li>
                                     <li class="reviews_tab">
-                                        <a href="#tab-reviews">Reviews (0)</a>
+                                        <a href="#tab-reviews">Reviews ({{count($item->Reviews)}})</a>
                                     </li>
                                 </ul>
                                 <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" style="display: block;">
                                     <h2>Product Description</h2>
-                                    <p>
-                                        Suspendisse in nulla lacinia, auctor ligula quis, ultrices eros. Maecenas iaculis sit amet tortor ut cursus. Etiam tempor libero a tristique hendrerit.
-                                        Proin rutrum dolor at nibh volutpat dictum. Fusce sem justo, congue fermentum gravida in, rhoncus in ex.
-                                    </p>
-                                    <p>
-                                        Maecenas in tempus lorem. Integer pretium tortor quis arcu convallis, non efficitur odio porta. Donec auctor molestie rutrum.
-                                        In dolor est, aliquet ut turpis varius, luctus sollicitudin arcu. Nam nec lacinia magna. Fusce placerat est blandit dui mollis convallis eget eu quam.
-                                        Sed quis ligula vitae dui condimentum ultrices nec in sapien.
-                                    </p>
+                                    {{$item->detail}}
                                 </div>
                                 <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" style="display: none;">
                                     <div id="reviews" class="woocommerce-Reviews">
@@ -105,15 +99,7 @@
                                                         </p>
                                                         <p class="comment-form-rating">
                                                             <label for="rating">Your Rating</label>
-                                                        <p class="stars"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p><select name="rating" id="rating" aria-required="true" required="" style="display: none;">
-                                                            <option value="">Rate…</option>
-                                                            <option value="5">Perfect</option>
-                                                            <option value="4">Good</option>
-                                                            <option value="3">Average</option>
-                                                            <option value="2">Not that bad</option>
-                                                            <option value="1">Very Poor</option>
-                                                        </select>
-                                                        </p>
+
                                                         <p class="comment-form-comment">
                                                             <label for="comment">Your Review
                                                                 <span class="required">*</span>
@@ -147,24 +133,25 @@
                             </div>
                             <div class="related products">
                                 <h2>Related Products</h2>
-                                <ul class="products">
-                                    <li class="product has-post-thumbnail column-1_3 first">
-                                        <a href="single-product.html" class="woocommerce-LoopProduct-link"> </a>
+                                <ul class="products row">
+                                    @foreach(\App\Models\Item::lastN(3) as $ri)
+                                    <li class="product has-post-thumbnail column-1_3">
+                                        <a href="/item/{{$ri->slug}}" class="woocommerce-LoopProduct-link"> </a>
                                         <div class="post_item_wrap">
                                             <div class="post_featured">
                                                 <div class="post_thumb">
-                                                    <a class="hover_icon hover_icon_link" href="single-product.html">
-                                                        <img src="images/2000x2000.png" class="attachment-shop_catalog size-shop_catalog" alt="cappuccino" title="cappuccino">
+                                                    <a class="hover_icon hover_icon_link" href="={{$ri->photo}}">
+                                                        <img src="{{$ri->thumb}}" class="attachment-shop_catalog size-shop_catalog" alt="{{$ri->name}}" title="{{$ri->name}}">
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="post_content">
                                                 <h3>
-                                                    <a href="single-product.html">Cappuccino</a>
+                                                    <a href="/item/{{$ri->slug}}">{{$ri->name}}</a>
                                                 </h3>
                                                 <span class="price">
                                                     <span class="woocommerce-Price-amount amount">
-                                                        <span class="woocommerce-Price-currencySymbol">$</span>4.00
+                                                        <span class="woocommerce-Price-currencySymbol">$</span>{{$ri->price}}
                                                     </span>
                                                 </span>
                                                 <a href="#"></a>
@@ -172,6 +159,7 @@
                                             </div>
                                         </div>
                                     </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>

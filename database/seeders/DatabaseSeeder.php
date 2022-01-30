@@ -16,15 +16,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\User::factory(10)->create();
+
+        $this->call(AdminSeeder::class);
+        $this->call(PermissionTableSeeder::class);
         $this->call(AddressSeeder::class);
         $this->call(ItemOrigionSeeder::class);
         $this->call(ItemSizeSeeder::class);
         $this->call(ItemRoastTypeSeeder::class);
 
+
+        \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
+
+
        Item::factory(10)->create();
         BlogCategory::factory(10)->create();
         Blog::factory(10)->create();
+
 
     }
 }

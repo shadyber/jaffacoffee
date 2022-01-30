@@ -71,11 +71,11 @@
 }
 
 .bg1 {
-	background-image:url(../images/bg_home_cup_go.png);
+	background-image:url(../images/bg_home_cup_go.png); 
 	background-position:50% 50%;
 }
 .bg2 {
-	background-image:url(../images/3000x2000.png);
+	background-image:url(../images/3000x2000.png); 
 	background-position:50% 50%;
 }
 
@@ -124,8 +124,8 @@
 	border-top-style:solid;
 }
 .cublock_4 {
-	color:#8c7b57;
-	font-size:12px;
+	color:#ecb881;
+	font-size:12px; 
 	line-height: 1.3em;
 }
 
@@ -287,7 +287,7 @@
 	display:none;
 }
 #rev_slider_1_1 .tp-bannertimer {
-	height: 3px;
+	height: 3px; 
 	background-color: rgba(0, 0, 0, 0.15);
 }
 .tp-bottom {
@@ -306,7 +306,7 @@
 }
 #rev_slider_2_2_wrapper {
 	margin:0px auto;
-	background-color:#385445;
+	background-color:#211f1e;
 	padding:0px;
 	margin-top:0px;
 	margin-bottom:0px;
@@ -318,7 +318,7 @@
 #slide-4-layer-1,
 #slide-5-layer-1,
 #slide-6-layer-1 {
-	z-index: 5;
+	z-index: 5; 
 	white-space: nowrap;
 }
 #slide-3-layer-2,
@@ -335,7 +335,7 @@
 #slide-4-layer-3,
 #slide-5-layer-3,
 #slide-6-layer-3 {
-	z-index: 7;
+	z-index: 7; 
 	white-space: nowrap;
 }
 #slide-2-layer-7 {
@@ -345,7 +345,7 @@
 #slide-4-layer-4,
 #slide-5-layer-4,
 #slide-6-layer-4 {
-	z-index: 8;
+	z-index: 8; 
 	white-space: nowrap;
 }
 #slide-2-layer-13,
@@ -388,17 +388,17 @@
 	background-color: transparent;
 	padding: 0px 0px 0px 0px ;
 	box-sizing:border-box;
-	-moz-box-sizing:border-box;
+	-moz-box-sizing:border-box; 
 	-webkit-box-sizing:border-box;
 }
 
 .esg-filters {
 	margin-bottom: 75px;
-	text-align: center;
+	text-align: center; 
 }
 
 .esg-filter-wrapper {
-	margin-left: 2.5px;
+	margin-left: 2.5px; 
 	margin-right: 2.5px;
 }
 
@@ -512,7 +512,7 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px ;
-	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC)
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC) 
 }
 
 .eg-monroe-element-1 {
@@ -655,7 +655,7 @@
 
 .minimal-light .esg-cartbutton {
 	color: #333;
-	cursor: default
+	cursor: default 
 }
 
 .minimal-light .esg-cartbutton .esgicon-basket {
@@ -697,7 +697,7 @@
 .minimal-light .esg-sortbutton-order.tp-desc:hover {
 	border-color: #bbb;
 	color: #333;
-	box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.13)
+	box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.13) 
 }
 
 .minimal-light .esg-filter-checked {
@@ -756,7 +756,7 @@
 	border-bottom-width: 0px ;
 	border-left-width: 0px ;
 	border-color: #ffffff ;
-	border-style: solid
+	border-style: solid 
 }
 .eg-washington-element-0:hover {
 	font-size: 16px ;
@@ -770,7 +770,7 @@
 	border-bottom-width: 0px ;
 	border-left-width: 0px ;
 	border-color: #ffffff ;
-	border-style: solid
+	border-style: solid 
 }
 
 .eg-washington-element-1:hover {
@@ -785,21 +785,21 @@
 	border-bottom-width: 0px ;
 	border-left-width: 0px ;
 	border-color: #ffffff ;
-	border-style: solid
+	border-style: solid 
 }
 .eg-washington-element-0-a {
 	display: inline-block ;
 	float: none ;
 	clear: none ;
 	margin: 0px 10px 0px 0px ;
-	position: relative
+	position: relative 
 }
 .eg-washington-element-1-a {
 	display: inline-block ;
 	float: none ;
 	clear: none ;
 	margin: 0px 10px 0px 0px ;
-	position: relative
+	position: relative 
 }
 .eg-washington-container {
 	background-color: rgba(24, 24, 24, 0.40)

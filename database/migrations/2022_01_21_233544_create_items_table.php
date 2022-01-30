@@ -32,6 +32,7 @@ class CreateItemsTable extends Migration
             $table->bigInteger('visit')->default(0);
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -124,3 +124,7 @@
         </div>
     </div>
 @endsection
+@section('css')
+
+    <link rel='stylesheet' href='/css/shortcodes.css' type='text/css' media='all' />
+    @endsection

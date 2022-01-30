@@ -17,7 +17,7 @@
 /* Hide results count
 .woocommerce-result-count { display:none; }
  */
-
+ 
 /* Buttons area */
 .woocommerce p.buttons, .woocommerce-page p.buttons {
 	padding-bottom:0;
@@ -757,7 +757,7 @@ div.pp_woocommerce .pp_arrow_next, div.pp_woocommerce .pp_arrow_previous {
 
 
 
-/* Widgets decoration
+/* Widgets decoration 
 ---------------------------------------------------------------*/
 
 /* Cart in top user menu */
@@ -772,13 +772,13 @@ div.pp_woocommerce .pp_arrow_next, div.pp_woocommerce .pp_arrow_previous {
 .top_panel_wrap .widget_shopping_cart {
 	display:block !important;
 }
-.top_panel_wrap .widget_shopping_cart ul.cart_list {
+.top_panel_wrap .widget_shopping_cart ul.cart_list { 
 	display:block;
 	position:static;
 	width:100%;
 	-webkit-box-shadow: none;
 	   -moz-box-shadow: none;
-			box-shadow: none;
+			box-shadow: none;		
 }
 .top_panel_wrap .sidebar_cart > li,
 .top_panel_wrap .widget_shopping_cart ul.cart_list > li {
@@ -847,7 +847,7 @@ div.pp_woocommerce .pp_arrow_next, div.pp_woocommerce .pp_arrow_previous {
 	display:none;
 }
 .woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a, .woocommerce-page ul.cart_list li a, .woocommerce-page ul.product_list_widget li a {
-    color: #8c7b57;
+    color: #ecb881;
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
@@ -966,7 +966,7 @@ body:not(.woocommerce) .widget_area:not(.footer_wrap) .widget_product_categories
 }
 
 
-/* Cart
+/* Cart 
 --------------------------------------------------------------------- */
 .woocommerce .quantity input.qty, .woocommerce #content .quantity input.qty, .woocommerce-page .quantity input.qty, .woocommerce-page #content .quantity input.qty {
 	font-weight: 400;
@@ -1039,7 +1039,7 @@ body:not(.woocommerce) .widget_area:not(.footer_wrap) .widget_product_categories
 
 
 
-/* Checkout
+/* Checkout 
 --------------------------------------------------------------------------*/
 
 .woocommerce form .form-row label, .woocommerce-page form .form-row label {
@@ -1059,7 +1059,7 @@ body:not(.woocommerce) .widget_area:not(.footer_wrap) .widget_product_categories
 .woocommerce table.shop_table .cart-subtotal .amount, .woocommerce-page table.shop_table .cart-subtotal .amount,
 .woocommerce table.shop_table .shipping td, .woocommerce-page table.shop_table .shipping td {
 	font-weight:400;
-	color: #222222;
+	color: #222222;	
 }
 .woocommerce .cart-collaterals .shipping_calculator, .woocommerce-page .cart-collaterals .shipping_calculator {
     clear: none;
@@ -1099,7 +1099,7 @@ body:not(.woocommerce) .widget_area:not(.footer_wrap) .widget_product_categories
 	color:#222222;
 }
 .mode_buttons a {
-    color: #8c7b57;
+    color: #ecb881;
 }
 .woocommerce-result-count {
     font-size: 0.889em;

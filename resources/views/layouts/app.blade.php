@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="format-detection" content="telephone=no">  <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -22,6 +23,10 @@
     <title>Contacts &#8211; Jafa Coffee - @yield('title')</title>
 
     <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
+
+    <link rel='stylesheet' href='/js/vendor/magnific/magnific-popup.css' type='text/css' media='all' />
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Grand+Hotel|Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" type='text/css' media='all' >
+    <link rel='stylesheet' href='/js/vendor/prettyPhoto/prettyPhoto.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/js/vendor/woo/woocommerce-layout.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/js/vendor/woo/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
     <link rel='stylesheet' href='/js/vendor/woo/woocommerce.css' type='text/css' media='all' />
@@ -35,7 +40,6 @@
     <link rel='stylesheet' href='/css/responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/skin.responsive.css' type='text/css' media='all' />
     <link rel='stylesheet' href='/css/custom.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='/css/core.messages.css' type='text/css' media='all' />
 </head>
 
 <body class="page contactspg body_filled article_style_stretch scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide preloader vc_responsive">
@@ -154,25 +158,28 @@
 <a href="#" class="scroll_to_top icon-up" title="Scroll to top"></a>
 <div class="custom_html_section"></div>
 
-<script type='text/javascript'src='/js/custom/jquery-1.12.4.min.js'></script>
+<script type='text/javascript' src='/js/vendor/jquery/jquery.js'></script>
 <script type='text/javascript' src='/js/vendor/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='/js/custom/custom.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/add-to-cart.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/woocommerce-add-to-cart.js'></script>
 <script type='text/javascript' src='/js/vendor/modernizr.min.js'></script>
+<script type='text/javascript' src='/js/vendor/magnific/jquery.magnific-popup.min.js'></script>
 <script type='text/javascript' src='/js/vendor/ui/core.min.js'></script>
+<script type='text/javascript' src='/js/vendor/ui/datepicker.min.js'></script>
+<script type='text/javascript' src='/js/vendor/prettyPhoto/jquery.prettyPhoto.min.js'></script>
+<script type='text/javascript' src='/js/vendor/prettyPhoto/jquery.prettyPhoto.init.min.js'></script>
+<script type='text/javascript' src='/js/vendor/woo/single-product.min.js'></script>
 <script type='text/javascript' src='/js/vendor/woo/jquery.blockUI.min.js'></script>
 <script type='text/javascript' src='/js/vendor/woo/woocommerce.min.js'></script>
 <script type='text/javascript' src='/js/vendor/woo/jquery.cookie.min.js'></script>
 <script type='text/javascript' src='/js/vendor/woo/cart-fragments.min.js'></script>
 <script type='text/javascript' src='/js/vendor/superfish.js'></script>
 <script type='text/javascript' src='/js/custom/jquery.slidemenu.js'></script>
+<script type='text/javascript' src='/js/custom/core.reviews.js'></script>
 <script type='text/javascript' src='/js/custom/core.utils.js'></script>
 <script type='text/javascript' src='/js/custom/core.init.js'></script>
 <script type='text/javascript' src='/js/custom/init.js'></script>
-<script type='text/javascript' src='/js/custom/embed.min.js'></script>
-<script type='text/javascript' src='/js/custom/shortcodes.js'></script>
-<script type='text/javascript' src='/js/custom/core.messages.js'></script>
-<script type='text/javascript' src='/js/custom/forms-api.min.js'></script>
-
 <script>
     var qnt=1;
     function getqnt(){
