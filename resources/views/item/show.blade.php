@@ -152,7 +152,7 @@
                                                     </span>
                                                 </span>
                                                 <a href="#"></a>
-                                                <a rel="nofollow" href="#" data-quantity="1" data-product_id="139" itemid="{{$ri->id}}" qnt="1" data-product_sku="" class="button product_type_simple add_to_cart_button add-to-cart">Add to cart</a>
+                                                <a   itemid="{{$ri->id}}" qnt="1"  class="button product_type_simple add_to_cart_button add-to-cart">Add to cart</a>
                                             </div>
                                         </div>
                                     </li>

@@ -18,8 +18,8 @@ class BlogFactory extends Factory
             'slug' => $this->faker->sentence,
             'tags' => $this->faker->words(3,true),
             'detail' => $this->faker->sentence(5,true),
-            'photo' => $this->faker->imageUrl('1024','768'),
-            'thumb' => $this->faker->imageUrl('640','480'),
+            'photo' => '/images/3000x2000.png',
+            'thumb' => '/images/10128666_60x60.jpg',
             'user_id' => $this->faker->randomNumber(1,3),
             'blog_category_id' => $this->faker->randomNumber(1,2),
         ];
