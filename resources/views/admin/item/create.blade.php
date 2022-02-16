@@ -6,8 +6,9 @@
         <!-- Card Body -->
         <div class="card-body">
 
-            <form action="/item" method="post" enctype="multipart/form-data">
-           @csrf
+            <form action="/items" method="post" enctype="multipart/form-data">
+             @csrf
+
                 <div class="form-group">
                     <input type="text" class="form-control form-control" name="name" placeholder="Item Name" required>
                     @error('name')
@@ -17,6 +18,7 @@
                     @enderror
 
                 </div>
+
                 <div class="form-group">
                     <input type="file" class="form-control form-control" name="photo" placeholder="Item Photo" required>
                     @error('photo')
@@ -27,7 +29,7 @@
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control form-control" name="detail" placeholder="Detail Information about the product" required>
+                    <textarea class="form-control form-control" id="detail" name="detail" placeholder="Detail Information about the product" required>
                     </textarea>
                     @error('detail')
                     <span class="invalid-feedback" role="alert">
@@ -52,39 +54,44 @@
                     </span>
                         @enderror
                     </div>
-                   <div class="form-group row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <input type="text" class="form-control form-control" name="color" placeholder="Item Color" value="black">
-                        @error('color')
-                        <span class="invalid-feedback" role="alert">
-                     <strong>{{ $message }}</strong>
-                    </span>
-                        @enderror
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="number" class="form-control form-control" name="init_qnt" placeholder="Stock Balance">
 
-                        @error('init_qnt')
-                        <span class="invalid-feedback" role="alert">
-                     <strong>{{ $message }}</strong>
-                    </span>
-                        @enderror
-                    </div>
-                </div>
-
-                <div class="form-group row" style="display: none">
-                    <div class="col-sm-4 mb-3 mb-sm-0">
-                        <input type="number" class="form-control form-control" name="height" placeholder="Height"  >
-                    </div>
-                    <div class="col-sm-4">
-                        <input type="number" class="form-control form-control" name="width" placeholder="Width">
-                    </div>
-
-                    <div class="col-sm-4">
-                        <input type="number" class="form-control form-control" name="Diameter" placeholder="Diameter">
-                    </div>
                 </div>
                 <div class="form-group">
+                    <select class="form-control form-control" name="item_origion_id" placeholder="Item Origion" >
+                        <option value="">Select Item Origion</option>
+                      @foreach(\App\Models\ItemOrigion::all() as $origion)
+                        <option value="{{$origion->id}}">{{$origion->title}}</option>
+                            @endforeach
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="number" class="form-control form-control" name="init_qnt" placeholder="Stock Balance" />
+
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control form-control" name="item_roast_type_id" placeholder="Item Roast Type" >
+                        <option value="">Select Roast Type</option>
+                      @foreach(\App\Models\ItemRoastType::all() as $roast)
+                        <option value="{{$roast->id}}">{{$roast->title}}</option>
+                            @endforeach
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control form-control" name="item_size_id" placeholder="Item Size Id" >
+                        <option value="">Select Roast Type</option>
+                      @foreach(\App\Models\ItemSize::all() as $size)
+                        <option value="{{$size->id}}">{{$size->title}}</option>
+                            @endforeach
+
+                    </select>
+                </div>
+
+             <div class="form-group">
                     <select class="form-control form-control" name="badge" placeholder="Item Badge" >
                         <option value="">Select Badge</option>
                         <option value="">NEW</option>
@@ -96,7 +103,7 @@
                 <button class="btn btn-primary btn-user btn-block" type="submit">
                     Post Product
                 </button>
-                </div>
+
             </form>
 
 
@@ -104,4 +111,10 @@
         </div>
     </div>
 
+@endsection
+@section('js')
+    <script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('detail');
+    </script>
 @endsection

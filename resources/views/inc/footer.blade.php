@@ -14,7 +14,6 @@
                 </div>
                 <address class="address_right">
                     Phone: {{\App\Models\Address::all()->last()->tel}}<br>
-                    Phone2: {{\App\Models\Address::all()->last()->tel2}}
                 </address>
                 <address class="address_left">
                     {{\App\Models\Address::all()->last()->address1}}<br>

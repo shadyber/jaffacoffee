@@ -6,8 +6,12 @@ use App\Models\Item;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Spatie\Permission\Models\Role;
 
+use App\Models\ItemPhotos;
+use Cviebrock\EloquentSluggable\Services\SlugService;
+
+use Spatie\Permission\Models\Role;
+use Image;
 class AdminItemController extends Controller
 {
     /**
@@ -59,6 +63,63 @@ User::isAdmin();
         //
 
         User::isAdmin();
+
+        $request->validate([
+            'name'=>'required',
+            'detail'=>'required',
+            'price'=>'required',
+            'init_qnt'=>'required',
+            'item_roast_type_id'=>'required',
+            'item_origion_id'=>'required',
+            'photo'=>'required|mimes:jpg,png,jpeg|max:5048',
+        ]);
+
+
+
+        if($request->hasFile('photo')) {
+
+            $newImageName=uniqid().'_'. $request->_token.'.'.$request->photo->extension();
+
+
+            $file = $request->file('photo');
+            $file_name =$newImageName;
+            $destinationPath = 'images/items/';
+            $new_img = Image::make($file->getRealPath())->resize(true, true);
+
+// save file with medium quality
+            $new_img->save($destinationPath . $file_name, 90);
+            $new_img->save($destinationPath.'thumbnile/' . $file_name, 15);
+
+            $request->photo->move(public_path('images/items'),$newImageName);
+
+        }
+
+        $item= Item::create([
+                'name'=>$request->input('name'),
+                'detail'=>$request->input('detail'),
+                'slug'=>SlugService::createSlug(Item::class,'slug',$request->title.$request->_token),
+                'photo'=>'/images/items/'.$newImageName,
+                'thumb'=>'/images/items/thumbnile/'.$newImageName,
+                'tags'=>$request->input('tags'),
+
+                'price'=>$request->input('price'),
+                'weight'=>$request->input('weight'),
+
+                'item_origion_id'=>$request->input('item_origion_id'),
+                'item_size_id'=>$request->input('item_size_id'),
+                'item_roast_type_id'=>$request->input('item_roast_type_id'),
+                'user_id'=>Auth::user()->id,
+            ]
+        );
+
+        $default_photo = new ItemPhotos;
+        $default_photo->item_id=$item->id;
+        $default_photo->photo='/images/items/'.$newImageName;
+        $default_photo->thumb='/images/items/thumbnile/'.$newImageName;
+        $default_photo->title=$request->input('name');
+        $default_photo->save();
+        return redirect()->back()->with('success','Item Created Succusfully!');
+
     }
 
     /**

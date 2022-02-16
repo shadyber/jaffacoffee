@@ -128,7 +128,7 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="page_content_wrap page_paddings_yes">
             <div class="content_wrap">
                 <div class="content">
@@ -138,17 +138,25 @@
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
-                                            <h2 class="sc_title sc_title_regular sc_align_center margin_top_tiny margin_bottom_small" data-animation="animated fadeInUp normal">Welcome to our Stor</h2>
+                                            <h2 class="sc_title sc_title_regular sc_align_center margin_top_tiny margin_bottom_small" data-animation="animated fadeInUp normal">Welcome to our Store</h2>
                                             <div class="sc_section margin_bottom_huge aligncenter w80" data-animation="animated fadeInUp normal">
                                                 <div class="sc_section_inner">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <p>
-                                                                From a cultural standpoint, coffeehouses largely serve as centers of social interaction:
-                                                                the coffeehouse provides patrons with a place to congregate,
-                                                                talk, read, write, entertain one another, or pass the time,<br />
-                                                                whether individually or in small groups.
+                                                                The degree to which coffee beans are roasted is one of the most important
+                                                                factors that determine the taste of the coffee in the cup. It could arguably
+                                                                make or break your blend. It is a finicky process that requires consistent
+                                                                heat applied throughout the roast time.
+
                                                             </p>
+                                                            <p>heat applied throughout the roast time.
+                                                                The most common way to describe coffee roast levels is by the color of the
+                                                                roasted beans, ranging from light to dark (or extra dark). As coffee beans
+                                                                absorb heat in the roasting process, their color becomes darker. Oils appear
+                                                                on the surface of the beans at higher temperatures.</p>
+                                                            <p>A good roaster knows the characteristics of the beans and can match the
+                                                                roasting level with the beans.</p>
                                                         </div>
                                                     </div>
                                                     <a href="#" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_large margin_top_medium margin_bottom_small">place an order</a>
@@ -208,17 +216,13 @@
                                             </div>
                                             <div class="sc_section aligncenter w80" data-animation="animated fadeInUp normal">
                                                 <div class="sc_section_inner">
-                                                    <h2 class="sc_title sc_title_regular sc_align_center margin_top_huge margin_bottom_small">coffee menu</h2>
+                                                    <h2 class="sc_title sc_title_regular sc_align_center margin_top_huge margin_bottom_small">Country of Origion</h2>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>
-                                                                “I’m looking to nature for my inspiration. Letting the natural produce speak.
-                                                                There’s so much out there, so much elegance and beauty.” &#8211; PETER GILMORE
-                                                            </p>
+
                                                         </div>
                                                     </div>
-                                                    <a href="menu.html" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_medium margin_top_medium margin_bottom_large">view full menu</a>
-                                                </div>
+                                                 </div>
                                             </div>
                                         </div>
                                     </div>
@@ -234,129 +238,128 @@
                                             <div id="sc_services_258_wrap" class="sc_services_wrap">
                                                 <div id="sc_services_258" class="sc_services sc_services_style_services-3 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols margin_top_huge margin_bottom_huge" data-interval="5914" data-slides-per-view="3" data-slides-min-width="250" data-animation="animated fadeInUp normal">
                                                     <div class="sc_columns columns_wrap">
-                                                        <div class="column-1_3 column_padding_bottom">
+
+
+                                                        <div class="column-1_4 column_padding_bottom">
                                                             <div id="sc_services_258_1" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_1.png" data-title="Corretto">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_1.png" data-title="Ethiopia">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_1-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Corretto</a>
+                                                                    <a href="#">Ethiopia</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="column-1_3 column_padding_bottom">
+                                                        <div class="column-1_4 column_padding_bottom">
                                                             <div id="sc_services_258_2" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_2.png" data-title="Cioccolato-macchiato">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_2.png" data-title="Guatemala">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_2-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Cioccolato-macchiato</a>
+                                                                    <a href="#">Guatemala</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="column-1_3 column_padding_bottom">
+                                                        <div class="column-1_4 column_padding_bottom">
                                                             <div id="sc_services_258_3" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_3.png" data-title="Espresso">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_3.png" data-title="Colombia">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_3-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Espresso</a>
+                                                                    <a href="#">Colombia</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="column-1_3 column_padding_bottom">
+                                                        <div class="column-1_4 column_padding_bottom">
                                                             <div id="sc_services_258_4" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_4.png" data-title="Caramel Macchiatto">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_4.png" data-title="Mexico">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_4-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Caramel Macchiatto</a>
+                                                                    <a href="#">Mexico</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="column-1_3 column_padding_bottom">
-                                                            <div id="sc_services_258_5" class="sc_services_item">
-                                                                <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_5.png" data-title="Irish Coffee">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
-                                                                            <img alt="" src="/images/services_5-300x281.png">
-                                                                        </a>
+                                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                            <div class="vc_column-inner ">
+                                                                <div class="wpb_wrapper">
+                                                                    <div class="vc_empty_space space12p">
+                                                                        <span class="vc_empty_space_inner"></span>
+                                                                    </div>
+                                                                    <div class="sc_section aligncenter w80" data-animation="animated fadeInUp normal">
+                                                                        <div class="sc_section_inner">
+                                                                            <h2 class="sc_title sc_title_regular sc_align_center margin_top_huge margin_bottom_small">Roast Type</h2>
+                                                                            <div class="wpb_text_column wpb_content_element ">
+                                                                                <div class="wpb_wrapper">
+                                                                                        <p>
+                                                                                            Roasting the beans is where the coffee characteristics we’re all familiar with
+                                                                                            will start to come through.
+                                                                                            The coffee roasting process transforms the raw coffee beans into the
+                                                                                            distinctively aromatic, crunchy beans we recognize as coffee.
+                                                                                        </p>
+                                                                                </div>
+                                                                            </div>
+                                                                           </div>
                                                                     </div>
                                                                 </div>
-                                                                <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Irish Coffee</a>
-                                                                </h4>
                                                             </div>
                                                         </div>
-                                                        <div class="column-1_3 column_padding_bottom">
-                                                            <div id="sc_services_258_6" class="sc_services_item">
-                                                                <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_6.png" data-title="Americano">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
-                                                                            <img alt="" src="/images/services_6-300x281.png">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Americano</a>
-                                                                </h4>
-                                                            </div>
-                                                        </div>
+
                                                         <div class="column-1_3 column_padding_bottom">
                                                             <div id="sc_services_258_7" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_7.png" data-title="Doppio">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_7.png" data-title="Light">
+                                                                        <a class="hover_icon hover_icon_link" href="Mexico">
                                                                             <img alt="" src="/images/services_7-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Doppio</a>
+                                                                    <a href="single-post.html">Light</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
                                                         <div class="column-1_3 column_padding_bottom">
                                                             <div id="sc_services_258_8" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_8.png" data-title="Caffe Latte">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_8.png" data-title="Meddium">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_8-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Caffe Latte</a>
+                                                                    <a href="#">Medium</a>
                                                                 </h4>
                                                             </div>
                                                         </div>
                                                         <div class="column-1_3 column_padding_bottom">
                                                             <div id="sc_services_258_9" class="sc_services_item">
                                                                 <div class="sc_services_item_featured post_featured">
-                                                                    <div class="post_thumb" data-image="images/services_9.png" data-title="Cappuccino">
-                                                                        <a class="hover_icon hover_icon_link" href="single-post.html">
+                                                                    <div class="post_thumb" data-image="images/services_9.png" data-title="Dark">
+                                                                        <a class="hover_icon hover_icon_link" href="#">
                                                                             <img alt="" src="/images/services_9-300x281.png">
                                                                         </a>
                                                                     </div>
                                                                 </div>
                                                                 <h4 class="sc_services_item_title">
-                                                                    <a href="single-post.html">Cappuccino</a>
+                                                                    <a href="#">Dark</a>
                                                                 </h4>
                                                             </div>
                                                         </div>

@@ -28,6 +28,7 @@ class CreateItemsTable extends Migration
             $table->integer('stock_beginning_balance')->default(1);
             $table->bigInteger('user_id')->unsigned();
             $table->string('badge')->nullable();
+            $table->string('weight')->nullable();
             $table->string('tags')->nullable();
             $table->bigInteger('visit')->default(0);
 
