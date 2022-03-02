@@ -42,9 +42,9 @@
                                 </p>
                             </div>
                             <div>
-                                <p>
-                                    {{$item->detail}}
-                                </p>
+
+                                    {!! substr($item->detail ,0,256) !!} read more...
+
                             </div>
                             <form class="cart" method="get" action="#" itemid="{{$item->id}}" >
                                 <div class="quantity">
@@ -73,7 +73,7 @@
                             </ul>
                             <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" style="display: block;">
                                 <h2>Product Description</h2>
-                                {{$item->detail}}
+                                {!! $item->detail !!}
                             </div>
                             <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" style="display: none;">
                                 <div id="reviews" class="woocommerce-Reviews">
