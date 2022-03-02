@@ -60,9 +60,9 @@
                     <ul>
                         <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                             <img src="images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption Hotcoffee-style-1 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-1" data-x="30" data-y="114" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Fresh and Tasty</div>
-                            <div class="tp-caption Hotcoffee-style-2 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-2" data-x="41" data-y="335" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">in the morning</div>
-                            <div class="tp-caption Hotcoffee-style-3 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-3" data-x="30" data-y="196" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">coffee</div>
+                            <div class="tp-caption Hotcoffee-style-1 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-1" data-x="30" data-y="114" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Freshly Roasted Jafa </div>
+                            <div class="tp-caption Hotcoffee-style-2 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-2" data-x="41" data-y="335" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">in the morning </div>
+                            <div class="tp-caption Hotcoffee-style-3 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-3" data-x="30" data-y="196" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Coffee</div>
                             <div class="tp-caption Hotcoffee-style-4 tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-4" data-x="547" data-y="618" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Where to buy?</div>
                             <div class="tp-caption tp-resizeme rs-parallaxlevel-2" id="slide-3-layer-5" data-x="742" data-y="62" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on">
                                 <img src="images/main_cup.png" alt="" width="458" height="540" data-ww="458px" data-hh="540px" data-no-retina>
@@ -85,8 +85,8 @@
                         </li>
                         <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                             <img src="images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption Hotcoffee-style-1 tp-resizeme rs-parallaxlevel-2" id="slide-2-layer-1" data-x="center" data-hoffset="" data-y="70" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">We made great coffee</div>
-                            <div class="tp-caption Hotcoffee-style-5 tp-resizeme rs-parallaxlevel-2" id="slide-2-layer-3" data-x="center" data-hoffset="" data-y="162" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">for our guests</div>
+                            <div class="tp-caption Hotcoffee-style-1 tp-resizeme rs-parallaxlevel-2" id="slide-2-layer-1" data-x="center" data-hoffset="" data-y="70" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Coffee Bean for our Customers </div>
+                            <div class="tp-caption Hotcoffee-style-5 tp-resizeme rs-parallaxlevel-2" id="slide-2-layer-3" data-x="center" data-hoffset="" data-y="162" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">We roast fresh</div>
                             <div class="tp-caption tp-resizeme" id="slide-2-layer-7" data-x="853" data-y="512" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on">
                                 <img src="images/main_slider_el_5.png" alt="" width="391" height="216" data-ww="391px" data-hh="216px" data-no-retina>
                             </div>
@@ -105,9 +105,9 @@
                         </li>
                         <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
                             <img src="images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                            <div class="tp-caption Hotcoffee-style-6 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-1" data-x="30" data-y="104" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">We Know</div>
-                            <div class="tp-caption Hotcoffee-style-6 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-2" data-x="41" data-y="330" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Life Awesome</div>
-                            <div class="tp-caption Hotcoffee-style-5 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-3" data-x="30" data-y="221" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">How To Make Your</div>
+                            <div class="tp-caption Hotcoffee-style-6 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-1" data-x="30" data-y="104" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">We roast </div>
+                            <div class="tp-caption Hotcoffee-style-6 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-2" data-x="41" data-y="330" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">for our Customers  </div>
+                            <div class="tp-caption Hotcoffee-style-5 tp-resizeme rs-parallaxlevel-1" id="slide-1-layer-3" data-x="30" data-y="221" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on"> fresh Coffee Bean</div>
                             <div class="tp-caption tp-resizeme" id="slide-1-layer-7" data-x="884" data-y="45" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:300;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;s:300;" data-start="500" data-responsive_offset="on">
                                 <img src="images/main_slider_el_5.png" alt="" width="391" height="216" data-ww="391px" data-hh="216px" data-no-retina>
                             </div>
@@ -159,7 +159,7 @@
                                                                 roasting level with the beans.</p>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_large margin_top_medium margin_bottom_small">place an order</a>
+                                                    <a href="/item" class="sc_button sc_button_square sc_button_style_border_1 sc_button_size_large margin_top_medium margin_bottom_small">place an order</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -180,16 +180,18 @@
                                                                 <div class="column-1_2 sc_column_item">
                                                                     <div class="sc_section margin_bottom_huge brown" data-animation="animated fadeInUp normal">
                                                                         <div class="sc_section_inner">
-                                                                            <h4 class="sc_title sc_title_big margin_top_huge margin_bottom_null">the<br />
-                                                                                experience</h4>
-                                                                            <h2 class="sc_title sc_title_style margin_top_null margin_bottom_tiny">sweet delight</h2>
+                                                                            <h4 class="sc_title sc_title_big margin_top_huge margin_bottom_null"> Experience<br />
+                                                                                Ethiopian </h4>
+                                                                            <h2 class="sc_title sc_title_style margin_top_null margin_bottom_tiny">Yirgacheffe Coffee </h2>
                                                                             <div class="wpb_text_column wpb_content_element vc_custom_1455040756358">
                                                                                 <div class="wpb_wrapper">
                                                                                     <p>
-                                                                                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier.
-                                                                                        Once the beans are roasted each participant is given an opportunity to sample the aromatic
-                                                                                        smoke by wafting it towards them. This is followed by the grinding.
-                                                                                    </p>
+                                                                                        Known for its sweet flavor and aroma with a light to medium body. Ethiopian
+                                                                                        Yirgacheffes are spicy and fragrant, and are frequently reviewed and rated as
+                                                                                        some of the highest quality Arabica coffees in the world. Their premium
+                                                                                        reputation also often means they carry a premium price, but even so, they
+                                                                                        offer better value for your money than other comparables (such as Hawaiian
+                                                                                        Kona and Jamaican Blue Mountain). </p>
                                                                                 </div>
                                                                             </div>
                                                                             <a href="#" class="sc_button sc_button_square sc_button_style_style sc_button_size_small margin_top_small margin_bottom_small">Read more&#8230;</a>
@@ -235,6 +237,7 @@
                                             <div class="vc_empty_space space10p">
                                                 <span class="vc_empty_space_inner"></span>
                                             </div>
+
                                             <div id="sc_services_258_wrap" class="sc_services_wrap">
                                                 <div id="sc_services_258" class="sc_services sc_services_style_services-3 sc_services_type_icons sc_slider_nopagination sc_slider_nocontrols margin_top_huge margin_bottom_huge" data-interval="5914" data-slides-per-view="3" data-slides-min-width="250" data-animation="animated fadeInUp normal">
                                                     <div class="sc_columns columns_wrap">
@@ -394,76 +397,34 @@
                                                 <div id="rev_slider_2_2_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
                                                     <div id="rev_slider_2_2" class="rev_slider fullwidthabanner" data-version="5.1">
                                                         <ul>
+                                                            @foreach(\App\Models\Item::popularN(3) as $it)
                                                             <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                                <img src="/images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                                <div class="tp-caption jafacoffee-style-7 tp-resizeme" id="slide-4-layer-1" data-x="643" data-y="238" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Black Tea</div>
+                                                                <img src="images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                                <div class="tp-caption jafacoffee-style-7 tp-resizeme" id="slide-4-layer-1" data-x="643" data-y="238" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                                                                    {{$it->name}}</div>
                                                                 <div class="tp-caption jafacoffee-style-8 tp-resizeme" id="slide-4-layer-2" data-x="645" data-y="359" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    ESPRESSO BLEND <br/>
-                                                                    Locally Roasted
+                                                                    {{$it->name}} <br/>
+                                                                    {{$it->ItemRoastType->name}}
                                                                 </div>
                                                                 <div class="tp-caption jafacoffee-style-9 tp-resizeme" id="slide-4-layer-3" data-x="645" data-y="454" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    Enjoy the exquisite savor of our black tea selection<br/>
-                                                                    and start your day with a heady teaste of a strong<br/>
-                                                                    and spicy cup of delight
+                                                                    {{$it->detail}}<br/>
                                                                 </div>
                                                                 <div class="tp-caption no-style" id="slide-4-layer-4" data-x="654" data-y="565" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off">
-                                                                    <a href="menu.html" class="sc_button sc_button_square sc_button_style_border_2 sc_button_size_medium">view full menu</a>
+                                                                    <a href="/item/{{$it->slug}}" class="sc_button sc_button_square sc_button_style_border_2 sc_button_size_medium">view full menu</a>
                                                                 </div>
                                                                 <div class="tp-caption tp-resizeme" id="slide-4-layer-5" data-x="70" data-y="205" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="x:-50px;opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
-                                                                    <img src="/images/2000x2000.png" alt="" width="524" height="523" data-ww="524px" data-hh="523px" data-no-retina>
+                                                                    <img src="{{$it->thumb}}" alt="" width="524" height="523" data-ww="524px" data-hh="523px" data-no-retina>
                                                                 </div>
                                                                 <div class="tp-caption tp-resizeme" id="slide-4-layer-6" data-x="649" data-y="118" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
                                                                     <img src="/images/second_slider_el_2.png" alt="" width="202" height="104" data-ww="202px" data-hh="104px" data-no-retina>
                                                                 </div>
                                                             </li>
-                                                            <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                                <img src="/images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                                <div class="tp-caption jafacoffee-style-7 tp-resizeme" id="slide-5-layer-1" data-x="643" data-y="238" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Iced Coffee</div>
-                                                                <div class="tp-caption jafacoffee-style-8 tp-resizeme" id="slide-5-layer-2" data-x="645" data-y="359" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    ESPRESSO BLEND <br/>
-                                                                    Locally Roasted
-                                                                </div>
-                                                                <div class="tp-caption jafacoffee-style-9 tp-resizeme" id="slide-5-layer-3" data-x="645" data-y="454" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    Delicate crispy taste of the finest coffee grains is <br/>
-                                                                    combined with fresh creamy milk, poured right on <br/>
-                                                                    cooling ice for serving
-                                                                </div>
-                                                                <div class="tp-caption no-style" id="slide-5-layer-4" data-x="654" data-y="565" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off">
-                                                                    <a href="menu.html" class="sc_button sc_button_square sc_button_style_border_2 sc_button_size_medium">view full menu</a>
-                                                                </div>
-                                                                <div class="tp-caption tp-resizeme" id="slide-5-layer-6" data-x="649" data-y="118" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
-                                                                    <img src="/images/second_slider_el_2.png" alt="" width="202" height="104" data-ww="202px" data-hh="104px" data-no-retina>
-                                                                </div>
-                                                                <div class="tp-caption tp-resizeme" id="slide-5-layer-7" data-x="49" data-y="62" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="x:-50px;opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
-                                                                    <img src="/images/2000x2000.png" alt="" width="571" height="699" data-ww="571px" data-hh="699px" data-no-retina>
-                                                                </div>
-                                                            </li>
-                                                            <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                                                <img src="/images/transparent.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                                                <div class="tp-caption jafacoffee-style-7 tp-resizeme" id="slide-6-layer-1" data-x="643" data-y="238" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">Espresso</div>
-                                                                <div class="tp-caption jafacoffee-style-8 tp-resizeme" id="slide-6-layer-2" data-x="645" data-y="359" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    ESPRESSO BLEND <br/>
-                                                                    Locally Roasted
-                                                                </div>
-                                                                <div class="tp-caption jafacoffee-style-9 tp-resizeme" id="slide-6-layer-3" data-x="645" data-y="454" data-width="['auto']" data-height="['auto']" data-visibility="['on','on','on','off']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                                                    Every cup is a performance of throroughly pressured hot <br/>
-                                                                    water through the finest delicious and finely <br/>
-                                                                    ground compacted coffee
-                                                                </div>
-                                                                <div class="tp-caption no-style" id="slide-6-layer-4" data-x="654" data-y="565" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-responsive="off">
-                                                                    <a href="menu.html" class="sc_button sc_button_square sc_button_style_border_2 sc_button_size_medium">view full menu</a>
-                                                                </div>
-                                                                <div class="tp-caption tp-resizeme" id="slide-6-layer-6" data-x="649" data-y="118" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
-                                                                    <img src="/images/second_slider_el_2.png" alt="" width="202" height="104" data-ww="202px" data-hh="104px" data-no-retina>
-                                                                </div>
-                                                                <div class="tp-caption tp-resizeme" id="slide-6-layer-8" data-x="68" data-y="156" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:500;e:Power2.easeInOut;" data-transform_out="x:-50px;opacity:0;s:500;s:500;" data-start="500" data-responsive_offset="on">
-                                                                    <img src="/images/2000x2000.png" alt="" width="487" height="471" data-ww="487px" data-hh="471px" data-no-retina>
-                                                                </div>
-                                                            </li>
+                                                            @endforeach
+
                                                         </ul>
                                                         <div class="tp-bannertimer tp-bottom"></div>
                                                     </div>
-                                                </div>
+                                                 </div>
                                             </div>
                                         </div>
                                     </div>
@@ -515,74 +476,27 @@
                                             </div>
                                             <div id="sc_blogger_282" class="sc_blogger layout_short_4 template_portfolio margin_top_tiny margin_bottom_small sc_blogger_horizontal no_description" data-animation="animated fadeInUp normal">
                                                 <div class="isotope_wrap" data-columns="4">
+
+                                                    @foreach(\App\Models\Blog::lastN(4) as $blog)
                                                     <div class="isotope_item isotope_item_short isotope_item_short_4 isotope_column_4">
                                                         <div class="post_item post_item_short post_item_short_4 post_format_standard">
                                                             <div class="post_content isotope_item_content">
                                                                 <div class="post_info_wrap info">
                                                                     <div class="info-back">
                                                                         <div class="post_cat">
-                                                                            <a href="#" rel="category tag">Cooking</a>
+                                                                            <a href="#" rel="category tag">{{$blog->category->title}}</a>
                                                                         </div>
                                                                         <h4 class="post_title">
-                                                                            <a href="single-post.html">Trend Spotting: French Tart</a>
+                                                                            <a href="/blog/{{$blog->slug}}">{{$blog->title}}</a>
                                                                         </h4>
-                                                                        <div class="post_date">Posted February 15, 2016</div>
+                                                                        <div class="post_date">{{$blog->created_at->diffForHumans()}}</div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="isotope_item isotope_item_short isotope_item_short_4 isotope_column_4">
-                                                        <div class="post_item post_item_short post_item_short_4 post_format_standard">
-                                                            <div class="post_content isotope_item_content">
-                                                                <div class="post_info_wrap info">
-                                                                    <div class="info-back">
-                                                                        <div class="post_cat">
-                                                                            <a href="#" rel="category tag">Cooking</a>
-                                                                        </div>
-                                                                        <h4 class="post_title">
-                                                                            <a href="single-post.html">Secret of Making Smoked Pork</a>
-                                                                        </h4>
-                                                                        <div class="post_date">Posted February 15, 2016</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="isotope_item isotope_item_short isotope_item_short_4 isotope_column_4">
-                                                        <div class="post_item post_item_short post_item_short_4 post_format_standard">
-                                                            <div class="post_content isotope_item_content">
-                                                                <div class="post_info_wrap info">
-                                                                    <div class="info-back">
-                                                                        <div class="post_cat">
-                                                                            <a href="#" rel="category tag">Cooking</a>
-                                                                        </div>
-                                                                        <h4 class="post_title">
-                                                                            <a href="single-post.html">Life is a Combination</a>
-                                                                        </h4>
-                                                                        <div class="post_date">Posted February 15, 2016</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="isotope_item isotope_item_short isotope_item_short_4 isotope_column_4">
-                                                        <div class="post_item post_item_short post_item_short_4 post_format_standard">
-                                                            <div class="post_content isotope_item_content">
-                                                                <div class="post_info_wrap info">
-                                                                    <div class="info-back">
-                                                                        <div class="post_cat">
-                                                                            <a href="#" rel="category tag">Cooking</a>
-                                                                        </div>
-                                                                        <h4 class="post_title">
-                                                                            <a href="single-post.html">Amazing Dining Rooms</a>
-                                                                        </h4>
-                                                                        <div class="post_date">Posted February 15, 2016</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    @endforeach
+
                                                 </div>
                                             </div>
                                         </div>

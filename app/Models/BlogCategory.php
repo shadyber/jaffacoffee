@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Models;
-
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -33,10 +31,10 @@ class BlogCategory extends Model
         return url('/category/'.$this->slug);
     }
 
-
     public static function allCategories(){
         return BlogCategory::all();
     }
+
     public function blogs(){
         return $this->hasMany(Blog::class);
     }

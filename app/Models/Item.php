@@ -21,6 +21,11 @@ class Item extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function ItemRoastType()
+    {
+        return $this->belongsTo(ItemRoastType::class,'item_roast_type_id','id');
+    }
+
 
     public function itemPhotos()
     {

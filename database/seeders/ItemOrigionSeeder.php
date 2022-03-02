@@ -22,8 +22,8 @@ class ItemOrigionSeeder extends Seeder
         ]);
         DB::table('item_origions')->insert([
 
-            'title' => 'Gintamala',
-            'detail' => 'Gintamala',
+            'title' => 'Guatemala',
+            'detail' => 'Guatemala',
             'icon' => '/images/icon/origion2.jpg',
         ]);
         DB::table('item_origions')->insert([
@@ -35,8 +35,8 @@ class ItemOrigionSeeder extends Seeder
 
         DB::table('item_origions')->insert([
 
-            'title' => 'columbia',
-            'detail' => 'columbia',
+            'title' => 'Colombia',
+            'detail' => 'Colombia',
             'icon' => '/images/icon/origion3.jpg',
         ]);
     }
