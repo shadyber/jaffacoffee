@@ -100,6 +100,12 @@
     </li>
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
+        <a class="nav-link" href="/static">
+            <i class="fas fa-fw fa-image"></i>
+            <span>Update Static Pages</span></a>
+    </li>
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
         <a class="nav-link" href="/blogs">
             <i class="fas fa-fw fa-sticky-note"></i>
             <span>List Blog</span></a>

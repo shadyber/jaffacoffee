@@ -67,17 +67,24 @@ Route::resource('/blogcategory',App\Http\Controllers\BlogCategoryController::cla
 Route::get('/about', function(){
     return view('about');
 });
+
 Route::get('/terms', function(){
-    return view('terms');
+    return view('terms')->with('terms',App\Models\StaticPages::TermsAndConditions());
 });
 Route::get('/privacy', function(){
-    return view('privacy');
+    return view('privacy')->with('terms',App\Models\StaticPages::PrivacyPolicy());
 });
-Route::get('/delivery', function(){
-    return view('delivery');
-});Route::get('/waranty', function(){
-    return view('waranty');
+
+Route::get('/refundpolicy', function(){
+    return view('refund')->with('terms',App\Models\StaticPages::RefundPolicy());
 });
+
+Route::get('/shippingorder', function(){
+    return view('shippingorder')->with('terms',App\Models\StaticPages::ShippingAndOrder());
+});
+
+Route::get('/static',[App\Http\Controllers\StaticPagesController::class,'show']);
+Route::post('/static',[App\Http\Controllers\StaticPagesController::class,'update']);
 
 Route::resource('/address',AddressController::class);
 

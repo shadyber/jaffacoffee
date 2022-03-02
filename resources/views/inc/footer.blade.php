@@ -55,8 +55,10 @@
         <div class="content_wrap">
             <div class="copyright_text">
                 <a href="#">Jafa Coffee LTD</a> © 2022 All Rights Reserved
-                <a href="/terms">Terms of Use</a> and
-                <a href="/privace">Privacy Policy</a>
+                <a href="/terms">|Terms of Use</a> and
+                <a href="/privacy">| Privacy Policy</a>
+                <a href="/refundpolicy">| Refund Policy</a>
+                <a href="/shippingorder"> | Shipping and Order Policy</a>
             </div>
         </div>
     </div>
